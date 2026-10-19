@@ -26,7 +26,7 @@ Source character and work names and available appearance tags come from a user-p
 - Setup, requirements and download links: to be confirmed against the packaged build.
 - Model weights: installed separately; not part of the planned catalog package.
 - AnimaDex references and database: separate from the catalog; redistribution scope remains to be reviewed.
-- License and distribution terms: not yet selected for this repository. No license is granted by this draft. Application code, models, generated images and third-party material must be considered separately.
+- License: the current documentation is licensed under the [MIT License](LICENSE). See [NOTICE.md](NOTICE.md) for scope. This does not license the application, images, models, or third-party materials that are not included here.
 
 This is an independent catalog project. It is not presented as an official OpenMOSS or AnimaDex product. Character and work names identify their respective subjects.
 
