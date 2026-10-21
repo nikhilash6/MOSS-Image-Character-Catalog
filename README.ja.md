@@ -1,4 +1,13 @@
-[English](README.md) · **[ライブデモを開く](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)**
+## [▶ ライブデモを開く（サンプル120枚）](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)
+
+> [!NOTE]
+> **ライブデモは、カタログ全体の一部だけを抜粋したプレビューです。**
+>
+> **デモ掲載：120枚**（キャラクター96枚＋スタイル24枚）。閲覧・検索・プロンプトコピーを試せます。
+>
+> **全件版：34,158枚**（キャラクター33,937枚＋スタイル221枚）。全件版のローカルアプリと画像一式は、引き続き公開準備中です。
+
+[English](README.md)
 
 # MOSS-Image キャラクター＆スタイルカタログ
 
