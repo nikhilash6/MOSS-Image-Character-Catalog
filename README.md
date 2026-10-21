@@ -1,3 +1,5 @@
+**[日本語READMEはこちら](README.ja.md)**
+
 ## [▶ Open the live demo — 120 sample images](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)
 <img width="1887" height="1013" alt="Clip_37" src="https://github.com/user-attachments/assets/f37ba1b4-12d7-4915-a7fe-f6506990f50b" />
 
@@ -12,8 +14,6 @@
 > **Demo: 120 images** — 96 characters + 24 styles. Try browsing, searching and copying prompts.
 >
 > **Full collection: 34,158 images** — 33,937 characters + 221 styles. Download the complete local application and image collection using the ZIP link above.
-
-[日本語](README.ja.md)
 
 # MOSS-Image Character & Style Catalog
 
