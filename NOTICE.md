@@ -7,8 +7,9 @@ static demo HTML/CSS/JavaScript, validation script and Pages workflow published
 in this repository. The demo frontend is adapted from the same maintainer's
 [Krea2 Character Catalog](https://github.com/ukr8b3g-cmyk/Krea2-Character-Catalog).
 
-This scope does not prospectively license the unpublished full local
-application or other materials that have not been included in this repository.
+The full local application and complete generated image collection are
+distributed separately in GitHub Releases. This notice's MIT scope remains
+limited to the documentation and published demo code described above.
 
 ## Generated samples
 
@@ -26,8 +27,8 @@ unchanged. Check those terms for your intended use or redistribution.
 
 The public sample files omit EXIF/XMP workflow metadata, private review
 state, backend credentials and local file paths. Their encoded image content
-is unchanged. Model weights, AnimaDex/Krea2 reference images and the full
-catalog archive are not included.
+is unchanged. Model weights and AnimaDex/Krea2 reference images are not included in
+the demo or the separate full-catalog Release ZIP.
 
 This independent project is not an official OpenMOSS, Krea2 or AnimaDex product.
 This notice clarifies scope and adds no conditions to the MIT License.

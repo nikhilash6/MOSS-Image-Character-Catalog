@@ -27,7 +27,7 @@ the current browser, not the published catalog.
 
 画像追加・編集・比較判定・判定JSONの反映はローカル版の機能です。
 デモは閲覧・検索・コピー用で、全機能を試せる画面ではありません。
-全件版のアプリ本体・画像一式・ZIP・サンプルワークフローJSONは公開準備中です。
+全件版のアプリ本体・画像一式・比較判定ツール・サンプルワークフローJSONは、[v0.1.0のRelease ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.0/MOSS-Image-Character-Catalog-v0.1.0.zip)で配布しています。
 
 ## Public data boundary / 公開範囲
 

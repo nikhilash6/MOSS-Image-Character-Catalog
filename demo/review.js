@@ -82,7 +82,7 @@
   Object.assign(messages.en,{
     demoScope:'120 samples: 96 characters + 24 styles',
     demoLimits:'Search, filter, enlarge and copy prompts. Editing and comparison judgments require the local application.',
-    demoQuality:'Examples demonstrate the interface, not a pass/fail selection. The complete 34,158-image package is being prepared.',
+    demoQuality:'Examples demonstrate the interface, not a pass/fail selection. The complete 34,158-image catalog is available from GitHub Releases.',
     demoReadme:'Read the README',demoStyles:'Explore styles',
     intro:'Try the catalog in your browser. No installation or GPU is needed.',
     styleIntro:'Copy the style caption and add your own subject. These results have not been graded for accuracy.',
@@ -90,7 +90,7 @@
   Object.assign(messages.ja,{
     demoScope:'お試し120枚：キャラクター96枚＋スタイル24枚',
     demoLimits:'検索・絞り込み・拡大・プロンプトコピーを試せます。編集や比較判定はローカル版の機能です。',
-    demoQuality:'操作を試すための抜粋で、合格判定による選別ではありません。全34,158枚の配布版は準備中です。',
+    demoQuality:'操作を試すための抜粋で、合格判定による選別ではありません。全34,158枚のカタログはGitHub Releasesからダウンロードできます。',
     demoReadme:'READMEを読む',demoStyles:'スタイルを見る',
     intro:'インストールやGPUなしで、カタログの操作を試せます。',
     styleIntro:'画風の英文をコピーし、好きな被写体と組み合わせて使えます。再現精度の合否選別はしていません。',

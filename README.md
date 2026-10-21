@@ -1,11 +1,15 @@
 ## [▶ Open the live demo — 120 sample images](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)
 
+### [↓ Download the complete catalog ZIP — v0.1.0](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.0/MOSS-Image-Character-Catalog-v0.1.0.zip)
+
+**34,158 images · about 2.05 GB / 1.91 GiB** · [Release notes](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.0) · [SHA256 checksums](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.0/SHA256SUMS.txt)
+
 > [!NOTE]
 > **The live demo is a preview showing only a small part of the collection.**
 >
 > **Demo: 120 images** — 96 characters + 24 styles. Try browsing, searching and copying prompts.
 >
-> **Full collection: 34,158 images** — 33,937 characters + 221 styles. The complete local application and image collection are still being prepared for release.
+> **Full collection: 34,158 images** — 33,937 characters + 221 styles. Download the complete local application and image collection using the ZIP link above.
 
 [日本語](README.ja.md)
 
@@ -13,16 +17,16 @@
 
 A searchable library of **MOSS-Image-generated images and reusable prompts**, built from an Anima-oriented character list plus additional characters and picture styles. Browse a subject, inspect its result, and copy a prompt into your own workflow. The interface follows the Krea2 catalog's familiar operations, with English and Japanese available.
 
-| Prepared full collection | Images / size |
+| Complete download | Images / size |
 |---|---:|
 | Characters | **33,937** |
 | Styles | **221** |
 | **Total** | **34,158** |
 | Files before compression | **About 2.75 GB / 2.56 GiB** |
-| Standard ZIP estimate, DEFLATE 6 | **2.05 GB / 1.91 GiB** |
+| Release ZIP, DEFLATE 6 | **2.05 GB / 1.91 GiB** |
 | Online demo | **96 characters + 24 styles**, about **8.36 MB** |
 
-**Release status — 2026-10-22:** the sample live demo and documentation are public. The complete local application, full image collection, ZIP and two sample workflow JSON files are **still being prepared for release**. GitHub **Code → Download ZIP** contains this demo and documentation, not the full collection. Model weights are separate downloads.
+**Release status — 2026-10-22:** **[v0.1.0 — Download the complete ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.0/MOSS-Image-Character-Catalog-v0.1.0.zip)** includes the local application, **33,937 character images + 221 styles**, comparison tools and both sample workflow JSON files. The online demo shows only 120 samples. GitHub **Code → Download ZIP** contains the demo and documentation; use the Release ZIP for the full collection. Model weights and reference libraries are separate downloads.
 
 **The collection has not been selected by pass/fail judgments.** Incorrect character identities, mismatched prompts and weak style results remain included. Neither inclusion nor resemblance proves training-set coverage or accurate reproduction. The demo is an interface sample, not a list of approved results.
 
@@ -32,7 +36,7 @@ A searchable library of **MOSS-Image-generated images and reusable prompts**, bu
 
 No Python, GPU or installation is needed for the demo. Switch tabs, search names, filter by work or appearance, change the order, click an image to enlarge it, and copy its prompt or original tags. Theme, language and display preferences are remembered in your browser.
 
-| Feature | Online demo | Prepared local version |
+| Feature | Online demo | Downloadable local version |
 |---|---|---|
 | Search, filters, sorting, enlargement, prompt copying | Yes, for 120 samples | Yes, for the full collection |
 | Add Image and edit names, prompts, tags or workflows | — | Yes |
@@ -59,11 +63,11 @@ This is a **character-list-based catalog with additional samples**, not an Anima
 
 Outfits, forms and tests count as separate images, not unique identities. Krea2 images and verdicts are not imported. The 221 styles include 40 earlier samples and 181 later additions. Their prompts describe visual characteristics in English; painter names, media and animation styles are experiments, not accuracy guarantees.
 
-The ZIP-size measurement was **2,054,072,995 bytes**, computed without saving a ZIP. It excludes model weights, personal settings and reference libraries; compression tools/settings and later package changes can alter the final size. The online demo's filter counts describe its sample subset, not the full collection.
+The complete Release ZIP uses standard DEFLATE compression (level 6) and is about **2.05 GB / 1.91 GiB**. Its exact byte size and SHA256 are listed on the [release page](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.0). Model weights, personal settings, logs, locks and reference libraries are excluded. The online demo's filter counts describe its sample subset, not the full collection.
 
-## Using the local version when released
+## Download and use the local version
 
-Keep the extracted folder together. You need **Python 3.10+ and a web browser** to view and manage images; GPU hardware is only needed for separate generation.
+Download the ZIP above, extract it, and keep the extracted folder together. To verify the download on Windows, run `Get-FileHash .\MOSS-Image-Character-Catalog-v0.1.0.zip -Algorithm SHA256` and compare the result with `SHA256SUMS.txt`. You need **Python 3.10+ and a web browser** to view and manage images; GPU hardware is only needed for separate generation.
 
 | OS | Startup file |
 |---|---|
@@ -89,7 +93,7 @@ Comparison is a separate human review screen, not an automatic quality judge. Co
 3. In the catalog toolbar, choose **Import review JSON**, select that file and inspect the preview.
 4. Choose **Apply confirmed decisions**. Accept shows/restores an image; Reject hides it. **Image files are not deleted.** Hold, unselected and unconfirmed rows remain unchanged.
 
-Import checks the actual MOSS image SHA256 and rejects changed/missing images. Share the JSON with people using the same catalog images. CSV list export is a different function; it is not the confirmed-decision import format. Personal references, favorites, hidden flags and review verdicts are excluded from the planned distribution package.
+Import checks the actual MOSS image SHA256 and rejects changed/missing images. Share the JSON with people using the same catalog images. CSV list export is a different function; it is not the confirmed-decision import format. Personal references, favorites, hidden flags and review verdicts are excluded from the Release ZIP.
 
 ## Generation settings and sample workflows
 
