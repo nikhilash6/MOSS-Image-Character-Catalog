@@ -1,4 +1,6 @@
 ## [▶ ライブデモを開く（サンプル120枚）](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)
+<img width="1887" height="1013" alt="Clip_37" src="https://github.com/user-attachments/assets/19c619e5-21dd-464f-90a6-b3c24a22c8fc" />
+
 
 ### [↓ 全件版ZIPをダウンロード — v0.1.0](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.0/MOSS-Image-Character-Catalog-v0.1.0.zip)
 
