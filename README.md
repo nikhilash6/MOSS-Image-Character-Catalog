@@ -1,6 +1,8 @@
 [日本語](README.ja.md)
 
 # MOSS-Image Character Catalog
+<img width="1887" height="1013" alt="image" src="https://github.com/user-attachments/assets/c71a2f9b-4540-4596-be2f-db8b5a50720e" />
+
 
 **Work in progress — public release preparation.**
 
