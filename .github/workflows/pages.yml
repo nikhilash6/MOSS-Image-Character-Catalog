@@ -1,0 +1,51 @@
+name: Validate and publish sample demo
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'demo/**'
+      - 'tools/validate_demo.py'
+      - '.github/workflows/pages.yml'
+      - 'README*.md'
+      - 'NOTICE.md'
+      - 'docs/LIVE_DEMO.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: moss-pages
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - name: Validate sample files and metadata
+        run: python3 tools/validate_demo.py
+      - name: Check frontend syntax
+        run: node --check demo/review.js
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: demo
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Deploy sample site
+        id: deployment
+        uses: actions/deploy-pages@v4

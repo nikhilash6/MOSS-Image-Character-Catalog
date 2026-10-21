@@ -1,169 +1,164 @@
-[English](README.md)
+[English](README.md) · **[ライブデモを開く](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)**
 
 # MOSS-Image キャラクター＆スタイルカタログ
 
-**公開準備中（2026年10月22日更新）。以下はローカルで生成・検証した配布予定内容です。このGitHubリポジトリではREADME等の文書を公開しており、アプリ本体・画像ZIP・サンプルJSONのダウンロード公開はまだ行っていません。**
+**MOSS-Imageで生成した画像と、再利用できるプロンプトを探すカタログ**です。Anima向けキャラクター一覧を基に、追加キャラクターと画風のサンプルを収録しています。画像を確認し、使いたいプロンプトをコピーできます。Krea2カタログと操作を揃え、英語・日本語に対応しています。
 
-**v0.1.0／キャラクター33,937枚・スタイル221枚を収録したローカルカタログです。** 生成済み画像とプロンプト・workflowを閲覧できます。モデル本体は同梱していません。 初期言語は英語です。画面で日本語へ切り替えられます。Krea2の画像・合否判定・個人設定は引き継いでいません。
-
-
-## 収録内容と容量
-
-**Anima向けのキャラクタータグ一覧を元に、追加候補と画風をMOSS-Imageで生成した画像・プロンプトのローカルカタログです。AnimaDexのアーティスト一覧ではありません。**
-
-| 内容 | 枚数 |
+| 配布準備中の全体 | 枚数・容量 |
 |---|---:|
-| キャラクター | **33,937** |
-| スタイル・画風 | **221** |
-| **合計** | **34,158** |
-| 展開後のファイル合計 | **約2.75 GB／2.56 GiB** |
-| ZIP標準圧縮（DEFLATE 6）の容量目安 | **約2.05 GB／1.91 GiB**（ZIPは保存せず圧縮量を計測） |
+| キャラクター | **33,937枚** |
+| スタイル | **221枚** |
+| **合計** | **34,158枚** |
+| 圧縮前のファイル合計 | **約2.75 GB／2.56 GiB** |
+| 標準ZIP相当・DEFLATE 6 | **約2.05 GB／1.91 GiB** |
+| オンラインデモ | **キャラクター96枚＋スタイル24枚**、約**8.36 MB** |
 
-キャラクターは、元CSVからの生成33,690枚に、追加候補80枚＋Krea2で確認した未収録候補160枚＋私服版2枚＋比較試作5枚を加えた33,937枚です。元CSVは36,492行で、ユーザー指定上限2,761件と未生成キャンセル41件を除いています。衣装・形態違い、比較試作もそれぞれ1枚として数え、異なるキャラクター数を表す数字ではありません。プラスアルファはキャラクター247枚とスタイル221枚です。容量はモデル・参照DB・個人設定を含まない配布構成の目安で、圧縮ソフトや設定によって変わります。
+**公開状況（2026-10-22）：** サンプルのライブデモと説明書を公開しています。全件版のアプリ本体・画像一式・ZIP・サンプルワークフローJSON 2件は、引き続き**公開準備中**です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書で、全件版ではありません。モデルは別途ダウンロードが必要です。
 
-**品質・キャラクター同一性・画風再現の合格／不合格による選別は行っていません。** 名前やプロンプトと一致しない画像、画風が十分に出ていない画像も含みます。配布時に品質判定による除外はせず、登録済み画像を収録します。利用者が自分で確認し、必要に応じて非表示・再表示や比較判定を行うための資料です。個人の非表示状態・判定結果は配布ZIPに含めません。
+**画像の合格・不合格による選別はしていません。** キャラクターが違うもの、プロンプトと合わないもの、画風の効きが弱いものも含みます。収録や見た目の類似は、正確な再現や学習データへの収録を証明しません。デモの抜粋も「合格した画像の一覧」ではありません。
 
-## キャラクター画像の生成条件（初期設定・2026年10月18日）
+## まず試す
 
-**今回の画像は、初期公開のMOSS-Image-SFTに、生成時間短縮用の8-step LoRAを適用した結果です。** MOSS-Image-Baseではありません。また、元のフル精度重みではなく、INT8 ConvRot版のモデル・テキストエンコーダーを使用しています。大量生成の時間短縮を目的とした設定であり、未変更のBaseモデルの評価や最高画質の比較試験ではありません。
+**[キャラクターを見る](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/) · [スタイルを見る](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/?tab=styles)**
 
-以下は **2026年10月18日** に、実際の生成画像に保存されたワークフローと使用中のAPIワークフローを照合した設定です。Base／SFTの初回公開は、[公式リポジトリ](https://github.com/OpenMOSS/MOSS-Image#news)で2026年10月16日と案内されています。
+デモにはPython・GPU・インストールは不要です。タブ切替、名前検索、作品・外見タグによる絞り込み、並べ替え、画像の拡大、プロンプト・元タグのコピーを試せます。テーマ・言語・表示設定はブラウザーに記憶されます。
 
-| 項目 | 実際の設定 |
+| 機能 | オンラインデモ | 配布準備中のローカル版 |
+|---|---|---|
+| 検索・絞り込み・並べ替え・拡大・コピー | 抜粋120枚で利用可 | 全件で利用可 |
+| Add Image、名前・プロンプト・タグ・ワークフローの編集 | — | 利用可 |
+| お気に入り・評価・非表示・Undo | — | 利用可 |
+| 比較判定・確定した判定JSONの読み込み | — | 利用可 |
+| 画像ごとに保存したワークフローJSON | — | 利用可 |
+| 画像生成 | なし | ComfyUIで別途実行 |
+
+[Krea2](https://github.com/ukr8b3g-cmyk/Krea2-Character-Catalog)と同様に、静的データで表示する方式です。GitHub Pagesにはサンプルサイトだけを配置します。全件版はPagesのサイト上限1 GBを超えるため、そのまま掲載しません。[デモの範囲・公開方法](docs/LIVE_DEMO.md)。
+
+## 収録内容と追加分
+
+**Anima向けキャラクター一覧＋追加サンプル**を基にしたカタログで、AnimaDexのアーティスト一覧ではありません。元の `anima_characters.csv` は36,492行です。ユーザー指定の上限調整で未生成予定2,761件を除き、さらに未生成41件をキャンセルし、元一覧からの生成済みは**33,690枚**となりました。
+
+| その元一覧の採用分に加えた内容 | 枚数 |
+|---|---:|
+| 追加キャラクター候補 | 80 |
+| Krea2で確認済みだった未収録候補 | 160 |
+| 私服差分の追加 | 2 |
+| 比較テスト | 5 |
+| **追加キャラクター小計** | **247** |
+| 画風・画家・表現媒体などのスタイル | **221** |
+| **追加分の合計** | **468** |
+
+衣装・形態差分・テストも1枚として数えています。ユニークな人物数ではありません。Krea2の画像や判定結果は取り込んでいません。スタイル221枚は先行40枚と追加181枚で、英文で画風の特徴を指定しています。画家名・媒体・アニメ表現などを試した結果であり、再現精度の保証ではありません。
+
+ZIP相当の容量は、ZIPを保存せずに**2,054,072,995バイト**と計測しました。モデル・個人設定・参照画像ライブラリーは含みません。圧縮ソフトや設定、今後の配布物更新で容量は変わります。デモ内の絞り込み件数は抜粋分の件数で、全件版の作品別枚数とは異なります。
+
+## ローカル版の使い方（公開後）
+
+展開したフォルダー全体を保持してください。閲覧・登録に必要なのは**Python 3.10以上とWebブラウザー**です。GPUは別途画像生成する場合に使います。
+
+| OS | 起動するファイル |
 |---|---|
-| 使用モデル | 初期公開の **MOSS-Image-SFT** |
-| 拡散モデルファイル | `MOSS-Image/moss_image_sft_int8_convrot.safetensors` |
-| モデル読込 | `UNETLoader`、`weight_dtype=default` |
-| テキストエンコーダー | `qwen3.5_9b_int8_convrot.safetensors` |
-| エンコーダー読込 | `CLIPLoader`、type=`moss_image`、device=`default` |
-| VAE | `flux2-vae.safetensors` |
-| 高速化LoRA | [lodestones/MOSS-Image-SFT-8-steps-dmd](https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd) の `moss_image/lora_latest.safetensors` |
-| LoRA読込／モデル強度 | `LoraLoaderModelOnly`／**1.0** |
-| サンプラー／スケジューラー | **`er_sde`／`simple`** |
-| ステップ／CFG／denoise | **8／1.0／1.0** |
-| シード | **8961184**、固定 |
-| 解像度／バッチサイズ | **896 × 1184／1**（`EmptyFlux2LatentImage`） |
-| ネガティブプロンプト | 空欄 |
-| 追加ガイダンス | `SkipLayerGuidanceDiTSimple`および明示的なshift変更ノードは使用していません |
-| カタログ保存画像 | WebP、品質 **70**、`lossless=False`、method **0**。プロンプト・ワークフローメタデータと別途JSONを保存 |
+| Windows | `START_HERE - Windows.cmd` をダブルクリック |
+| macOS | `START_HERE - macOS.command`、または `sh './START_HERE - macOS.command'` |
+| Linux | `sh './START_HERE - Linux.sh'` |
 
-LoRAは大量の候補を現実的な時間で確認するために使いました。キャラクターの連続生成とサンプルのモデル強度は **1.0** です。LoRAなしのSFTやBF16版の結果を示すものではありません。
+基本アドレスは `http://127.0.0.1:8797/` です。使用中なら、ランチャーが開いた・表示した実際のアドレスを使ってください。**サーバー停止**はこのカタログのプロセスを終了します。タブを閉じる操作とは別です。対応Pythonを再利用するか専用環境を準備するため、初回の依存関係セットアップにはインターネット接続が必要な場合があります。
 
-入力元は、Krea2版でも使用した、ユーザー提供の **Anima向けキャラクタータグ一覧（`anima_characters.csv`）** です。そのタグ一覧を用いて、MOSS-Imageでキャラクターの再現を試みています。「Anima向け」は入力リストの用途を指し、画像をAnimaモデルで生成したという意味ではありません。MOSS-Imageの公式対応キャラクター一覧や学習済み一覧ではなく、タグの互換性・正しい再現を保証するものでもありません。
+### 探す・コピーする・画像を追加する
 
-生成プロンプトは、元CSVのキャラクター名・作品名・外見タグに、全身・1体・中央・画面の約65%・十分な余白・薄いグレーの背景・柔らかい照明という共通指定を加えています。人物には着衣・立ち姿の指定も加えています。元タグ、コピー用プロンプト、実際の生成プロンプトは別々に保持します。MOSSプロンプト拡張スキルは、**ここで説明するキャラクターの一括生成には使用していません**。
+1. **キャラクター／スタイル**を切り替えます。キャラクターの初期表示は **Copyright件数順**で、作品・シリーズ単位にまとまります。**その他の作品／オリジナル**は最後に配置し、登録済み20枚以下の作品もここへまとめます。
+2. **生成順（新しい順）／生成順（古い順）**で、MOSS画像の保存時刻を基準に並べ替えられます。画像をクリックすると拡大します。**スタイルコピー**には画風の文章だけを含め、共通の見本シーンを除きます。
+3. **画像を追加（Add Image）**でキャラクター／スタイルを選び、WebP・PNG・JPEGを指定します。名前・作品／分類・再利用プロンプト・元タグ・ワークフローJSONは任意です。登録するとローカルに保存され、空欄の名前にはファイル名を使います。
+4. **Web画像検索**は入力した名前・作品を別タブで検索する補助機能です。検索画像を自動登録しません。保存済み画像の詳細にある**編集**から、後で内容を直せます。
 
-**キャラクター用サンプル：`MOSS_Image_Character_Sample.json`**。ComfyUIへドラッグ＆ドロップし、導入したモデル名を選び直して実行します。SFT INT8 ConvRot＋8-step LoRA強度1.0、8steps、CFG1.0、er_sde/simple、seed8961184、896×1184、Small Decoderの構成です。キャラクター・外見の英文を変えて試せます。初期の11,694枚は標準のFlux2 VAE、その後の22,243枚はSmall Decoderで、画像ごとの実設定は詳細画面の「保存JSONを開く」で確認できます。
+### 比較判定と共有
 
-サンプルは通常のSave ImageでPNG保存します。収録画像は中間PNGからWebP品質70へ変換して登録したものです。サンプルにWebP変換・カタログ自動登録は含みません。画像を生成した後、Add Image／画像を追加で登録できます。
+比較画面は、人が判定するための別画面です。自動的に品質を判別するものではありません。参照比較には各自のAnimaDexを設定します。**MOSSのスタイル画像は、Krea2やAnimaDexの参照画像がなくても合否判定できます。** 参照なしを明示し、MOSS画像単独の判定として記録します。
 
-**結果の読み方：** SFTによる追加学習、量子化、高速化LoRA、少ステップ生成、プロンプト、シードはいずれも絵柄やキャラクター再現に影響し得ます。Baseモデル、フル精度版、LoRAなしのSFT、別の生成条件と同じ結果になるとは限りません。再現が弱い画像があっても、そのキャラクターを生成できないと断定する資料ではありません。外見の類似だけで正しいキャラクターや学習済みと断定するものでもありません。自動生成した画像は人間による確認待ちです。
+1. 比較画面で**合格・不合格・保留**を選びます。
+2. 共有したい判定を選択し、確定した**JSON**を書き出します。
+3. カタログ上部の**判定JSONを読み込む（Import review JSON）**を開き、ファイルを選んでプレビューします。
+4. **確認した判定を反映**を押します。合格は表示・再表示、不合格は非表示にします。**画像ファイルは削除しません。** 保留・未選択・未確定の行は変更しません。
 
-**今後のアニメ版について：** [開発者AMA](https://www.reddit.com/r/StableDiffusion/comments/1x7zf1r/hey_guys_im_one_of_the_core_developers_of/)では、OpenMOSSのコア開発者がアニメ版の公開を優先する方針を述べています。今回のカタログは上記の**初期公開の汎用SFTモデル＋高速化LoRA**による記録であり、その将来のアニメ特化版の評価ではありません。ここでは公開日や性能を確約せず、将来のモデルには別途検証が必要です。
+取り込み時にMOSS実画像のSHA256を確認し、画像の変更・欠落があれば拒否します。同じ画像一式を持つ利用者同士でJSONを共有してください。CSV一覧出力は別機能で、確定判定の読み込み形式ではありません。個人の参照画像、お気に入り、非表示設定、判定結果は配布予定ZIPに含めません。
 
-## スタイル画像の生成条件（2026年10月21日）
+## 生成設定とサンプルワークフロー
 
-収録したスタイル221枚（先行40枚＋追加181枚）の保存workflowを全件照合し、以下の設定が共通であることを確認しました。**2026年10月21日**に、保存済みレンブラント試作のワークフローとバッチ実行処理を照合しました。上記のキャラクター画像とは生成条件が異なります。
+保存済みワークフローを基にした**このカタログで実際に使った設定**です。あらゆる条件への推奨値ではありません。キャラクターは大量生成を現実的な時間で進める設定、スタイルは高速化LoRAを使わないSFTの設定です。
 
-| 項目 | スタイル画像の設定 |
-|---|---|
-| 拡散モデル | **MOSS-Image-SFT**、`MOSS-Image/moss_image_sft_bf16.safetensors` |
-| モデル読込 | `UNETLoader`、`weight_dtype=default` |
-| テキストエンコーダー | `qwen3.5_9b_int8_convrot.safetensors`。`CLIPLoader`、type=`moss_image`、device=`default` |
-| VAE | `full_encoder_small_decoder.safetensors` |
-| LoRA | **使用していません**。このワークフローにLoRA読込ノードはありません |
-| ステップ／CFG／denoise | **25／2.5／1.0** |
-| サンプラー／スケジューラー | **`er_sde`／`simple`** |
-| シード | **8961184**、固定 |
-| 解像度／バッチサイズ | **896 × 1184／1** |
-| ネガティブプロンプト | 空欄 |
-| 最終画像 | **WebP、品質70**、`lossless=False`、method **0** |
-| 保存処理 | `SaveImageKJ`で中間PNGを保存後、ローカルの登録処理でWebPに変換。埋込メタデータと別途ワークフローJSONを保持 |
+| 設定 | キャラクター連続生成 | スタイル生成 |
+|---|---|---|
+| 拡散モデル | **MOSS-Image-SFT INT8 ConvRot** | **MOSS-Image-SFT BF16** |
+| 拡散モデルのファイル | `moss_image_sft_int8_convrot.safetensors` | `moss_image_sft_bf16.safetensors` |
+| テキストエンコーダー | `qwen3.5_9b_int8_convrot.safetensors` | 同じINT8 ConvRotエンコーダー |
+| VAE | 当初Flux2 VAE、途中からSmall Decoder | Small Decoder |
+| 高速化LoRA | `lora_latest.safetensors`、**強度1.0** | **なし** |
+| Steps／CFG | **8／1.0** | **25／2.5** |
+| Sampler／Scheduler | `er_sde`／`simple` | 同じ |
+| Seed | **8961184**、固定 | 同じ |
+| 解像度／バッチサイズ | **896 × 1184／1** | 同じ |
+| Denoise／Negative prompt | **1.0／空欄** | 同じ |
+| カタログの画像形式 | **WebP品質70**、非可逆、method 0 | 同じ |
+| 汎用サンプルのファイル名 | **`MOSS_Image_Character_Sample.json`** | **`MOSS_Image_Style_Sample.json`** |
 
-拡散モデルはBF16版ですが、テキストエンコーダーはINT8 ConvRot版です。全体をBF16で処理する構成ではありません。これは今回のスタイル画像の実使用条件であり、モデル全般への推奨設定を示すものではありません。**スタイル用サンプル：`MOSS_Image_Style_Sample.json`**。ComfyUIへドラッグ＆ドロップして読み込みます。英文の画風説明と共通場面を変えて使えます。通常のSave ImageでPNG保存し、WebP変換・自動登録は含みません。キャラクター用とは設定が異なります。
+キャラクターは**BaseではなくSFT**を使っています。大量の候補を確認するため、8ステップ高速化LoRAを**1.0**で使用しました。LoRAなしのSFTやBF16の最高品質を評価したものではありません。最初の**11,694枚**は `flux2-vae.safetensors`、後半の**22,243枚**は `full_encoder_small_decoder.safetensors` です。画像ごとの保存ワークフローに実設定を残し、汎用キャラクターサンプルはSmall Decoderに揃えています。
 
-プロンプトは、描画の特徴・素材・輪郭・造形・塗りを英文で指定します。画家指定では名前も英文中に含め、`@`やアーティストタグの2回反復は使いません。準備にはローカルの **moss-image-prompt-enhancer** のCaptionコンパイラーを使用しています。この処理自体は画像生成や外部サービスへの問い合わせを行いません。コピー用プロンプトは画風の段落だけを保持し、実際の生成時には次の共通場面を加えます。
+キャラクタープロンプトは元一覧の名前・作品・外見タグを英文へ組み込み、単体・中央・全身・余白・薄いグレー背景・柔らかい照明を共通に指定しています。人物には服を着た立ち姿を指定しました。元タグ、再利用用コピー文、実際の生成プロンプトは別に保持します。このキャラクターバッチにMOSSプロンプトエンハンサースキルは使っていません。
+
+スタイル**221枚すべて**の保存ワークフローを照合し、SFT BF16拡散モデル・INT8エンコーダー・Small Decoder・LoRAなし・25 steps・CFG 2.5を確認しています。画風の特徴を英文で指定し、次の共通シーンを加えました。
 
 ```text
 A single adult woman with short dark brown hair, wearing a cream shirt and a navy apron, carefully arranging a small bouquet of yellow and white flowers on a wooden worktable in a bright flower workshop. Three-quarter view from waist up, natural hand gesture, soft window light, simple uncluttered background. One person.
 ```
 
-人物・服装・花・作業内容を共通にし、人形や彫刻ではその媒体の造形へ置き換えます。NovelAI風・Animagine風・niji風も、**MOSS-Imageで英文の特徴を指定する実験**です。各サービスや別のモデルで生成した画像ではなく、名称だけでそのモデルの画風が再現できると保証するものでもありません。異なる画風が似た結果になる可能性もあるため、実画像の目視確認が必要です。
+NovelAI・Animagine・niji風の項目も、**MOSS-Imageで英文の特徴を指定した試作**です。そのサービスやモデルで生成した画像ではなく、名前どおりの再現を保証しません。モデル、量子化、LoRA、steps、CFG、文章、seedを変えると結果も変わります。今回うまく出なかったことだけで、その題材を生成できないとは判断できません。
 
-各画像の実際の生成構成は、保存済みワークフローで確認できます。生成時間はプロンプト・モデル読込・PCの負荷などで変わるため、ComfyUI内の実行時間と、変換・保存・登録を含む時間を分けて記録しています。
+**公開後のサンプルの使い方：** 対応するJSONをComfyUIへドラッグし、各Loaderで手元のモデルを選び直し、キャラクターまたは画風・場面の英文を変更して生成します。2件とも標準の **Save ImageでPNG保存**します。カタログのWebP品質70変換・登録は別処理で、サンプルから自動登録はしません。実際のスタイルバッチは `SaveImageKJ` で中間PNGを保存後、WebPへ変換し、埋め込みプロンプト／ワークフローと別ファイルのJSONを保持しました。
 
-## 生成に使用したPC・ソフトウェア環境
+<details>
+<summary>Loaderと再現条件の詳細</summary>
 
-**2026年10月18日** に、PCのハードウェア情報と稼働中ComfyUIのAPIから確認しました。
+共通で `UNETLoader` の `weight_dtype=default`、`CLIPLoader` のtype `moss_image`・device `default`、`EmptyFlux2LatentImage`を使用します。キャラクターは `LoraLoaderModelOnly` を追加しています。明示的なshift調整ノードや `SkipLayerGuidanceDiTSimple` は使っていません。キャラクター設定は2026-10-18、スタイル設定は2026-10-21に照合しました。初期の汎用SFTは[公式リポジトリ](https://github.com/OpenMOSS/MOSS-Image#news)で2026-10-16に公開が告知されたモデルで、今後のアニメ専用モデルを評価した結果ではありません。
 
-| 項目 | 使用環境 |
+生成時間はプロンプト、保存・登録処理、モデル読み込み、システム負荷で変わります。ComfyUI内実行時間と保存・登録込み時間は別の指標です。同じファイル名でも、将来のモデル更新まで同じ重み・出力とは限りません。
+
+</details>
+
+### モデルのダウンロード
+
+| ファイル | 配布元 | ComfyUIの配置先 |
+|---|---|---|
+| `moss_image_sft_int8_convrot.safetensors` | [Comfy-Org：SFT INT8 ConvRot](https://huggingface.co/Comfy-Org/MOSS-Image/blob/main/diffusion_models/moss_image_sft_int8_convrot.safetensors) | `models/diffusion_models` |
+| `moss_image_sft_bf16.safetensors` | [Comfy-Org：SFT BF16](https://huggingface.co/Comfy-Org/MOSS-Image/blob/main/diffusion_models/moss_image_sft_bf16.safetensors) | `models/diffusion_models` |
+| `qwen3.5_9b_int8_convrot.safetensors` | [Comfy-Org：エンコーダー](https://huggingface.co/Comfy-Org/MOSS-Image/blob/main/text_encoders/qwen3.5_9b_int8_convrot.safetensors) | `models/text_encoders` |
+| `flux2-vae.safetensors` | [Comfy-Org：当初のVAE](https://huggingface.co/Comfy-Org/MOSS-Image/blob/main/vae/flux2-vae.safetensors) | `models/vae` |
+| `full_encoder_small_decoder.safetensors` | [Black Forest Labs：Small Decoder](https://huggingface.co/black-forest-labs/FLUX.2-small-decoder/blob/main/full_encoder_small_decoder.safetensors) | `models/vae` |
+| `lora_latest.safetensors` | [lodestones：8ステップLoRA](https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd/blob/main/lora_latest.safetensors) | `models/loras` |
+
+MOSS-Image対応のComfyUIを使ってください。サンプルと配置先のサブフォルダーが違う場合は、各Loaderでインストール済みファイルを選択します。モデルと利用条件はそれぞれの配布元を確認してください。
+
+### 生成に使ったPC
+
+**RTX 5060 Ti（VRAM 16 GB）、Ryzen 9 3900X、メモリー64 GB、Windows 11 Pro**です。画像生成に使用した環境で、カタログ閲覧の最低要件ではありません。
+
+<details>
+<summary>記録したソフトウェア環境（2026-10-18）</summary>
+
+| 項目 | 記録値 |
 |---|---|
-| OS | Windows 11 Pro、ビルド **26200** |
-| CPU | AMD Ryzen 9 **3900X**、12コア／24スレッド |
-| メインメモリ | **64 GB**搭載、OS報告の使用可能容量は約63.93 GiB |
-| GPU／VRAM | NVIDIA GeForce **RTX 5060 Ti／16 GB** |
-| NVIDIAドライバー | **616.92** |
-| ComfyUI | **0.41.0**、ローカルのコミット `5cc4b870094c89090db54bd8d12649dcaf89f2ba` |
-| ComfyUIのPython | **3.12.14**、64-bit |
-| PyTorch | **2.14.1+cu130**（CUDA 13.0ビルド） |
+| OS | Windows 11 Pro、build 26200 |
+| CPU | AMD Ryzen 9 3900X、12コア／24スレッド |
+| メモリー | 64 GB搭載、利用可能約63.93 GiB |
+| GPU／ドライバー | NVIDIA GeForce RTX 5060 Ti、16 GB／616.92 |
+| ComfyUI | 0.41.0、commit `5cc4b870094c89090db54bd8d12649dcaf89f2ba` |
+| Python／PyTorch | 3.12.14・64bit／2.14.1+cu130 |
 
-これは**このカタログ画像を生成したPCの記録**であり、最低動作要件ではありません。CUDA 13.0はPyTorchのビルド情報で、別途CUDA Toolkitを導入しているという意味ではありません。生成速度は設定・プロンプト・モデルの常駐状態・他の処理によって変動します。保存済み画像をカタログで閲覧するだけなら、このGPUは必要ありません。macOS／Linux用の起動ファイルの同梱は、そのOSで画像生成を検証したという意味ではありません。
+初期に記録した環境であり、後続の全生成が同じバージョンだったという意味ではありません。CUDA 13.0はPyTorchのビルド表記です。別途CUDA Toolkitを導入したことを示すものではありません。macOS／Linux用ランチャーはKrea2版を引き継いでいますが、このMOSS配布物での新たな3 OS CIやmacOS／Linux実機デスクトップ検証は未実施です。
 
-## 起動
+</details>
 
-Windowsは **START_HERE - Windows.cmd** をダブルクリックしてください。フォルダ全体を一緒に保管します。Python 3.10以上とブラウザーが必要です。通常のURLは **http://127.0.0.1:8797/** です。空いていない場合は別のポートを案内します。
+## プロジェクトとライセンス
 
-既存の互換Pythonを利用し、不足時は専用環境を作成するランチャーを流用しています。既存Pythonへ勝手に依存を追加しません。初回の依存導入には通信が必要な場合があります。
+UIは[Krea2 Character Catalog](https://github.com/ukr8b3g-cmyk/Krea2-Character-Catalog)を基に、AnimaDexに近い操作感を目指しています。OpenMOSS・Krea2・AnimaDexの公式製品ではありません。
 
-macOS：`sh './START_HERE - macOS.command'`、Linux：`sh './START_HERE - Linux.sh'`。このMOSS版での3OS CIはまだ行っていません。
-
-## 画像追加・編集
-
-1. 「画像を追加」を押し、WebP・PNG・JPEGを選びます。
-2. 「キャラクター」か「スタイル」を選びます。
-3. 名前・作品／分類・プロンプト・元タグ・ワークフローJSONは必要な分だけ入力します。未入力でも登録できます。
-4. 登録後は画像を開き、「編集」から修正できます。
-
-「閉じる」は入力の下書きを保持し、「キャンセル」は未保存入力を破棄します。「登録／変更を保存」で確定します。「サーバー停止」はバックグラウンド処理を終了する別の操作です。
-
-登録画像は **app/outputs/user_items/**、情報は **app/outputs/user_catalog.json** と **app/outputs/user_catalog_edits.json** に保存されます。移動や整理の前にはapp/outputsをバックアップしてください。画像を任意フォルダに置くだけでは登録されません。
-
-## ワークフローと任意の比較
-
-この配布物は保存済み画像を閲覧するためのカタログです。生成用バッチ・中間PNG・進捗ログ・モデル重みは同梱していません。サンプルは **`MOSS_Image_Character_Sample.json`** と **`MOSS_Image_Style_Sample.json`** の2件です。カタログを開くだけでは生成を開始しません。任意のAnimaDex比較は独立した機能です。配布物に含める比較の設定手順を参照してください。モデル本体は別途導入が必要です。
-
-公式配布：[Comfy-Org/MOSS-Image](https://huggingface.co/Comfy-Org/MOSS-Image)。画面と画像登録機能はKrea2カタログv0.9.6から流用しています。
-
-## 配布版のスタイル閲覧
-
-「スタイル」タブで221枚を表示できます。「生成順（新しい順）／生成順（古い順）」はMOSS画像の保存日時で並びます。コピーするのは画風の英文部分で、見本の女性・花の共通場面は含みません。UIはAnimaDexに近い操作性を目指し、Krea2カタログと共通する操作を使用していますが、同一のアプリではありません。
-
-比較は任意で、利用者自身のAnimaDexデータを別途設定します。スタイルは参照画像がなくてもMOSS画像を単独表示します。参照が一意に対応する場合は左右に並べ、参照なしの項目には「参照画像なし」と明示します。参照なしのスタイルも「合格・不合格・保留」で目視判定できます。選択した合格・不合格だけを確定JSONへ出力し、カタログ上部の「判定JSONを読み込む」で内容を確認して反映します（合格は表示、不合格は非表示、画像は削除しません）。保留・未選択は反映しません。参照なしの判定はMOSS単独判定として記録し、反映前に実画像のSHA256を照合します。元画像・個人の参照DB・比較判定は同梱していません。221枚すべての画風再現を合格と判定したという意味ではありません。
-
-## モデルの入手先とサンプルの使い方
-
-
-| ファイル名 | 入手先 |
-|---|---|
-| `moss_image_sft_int8_convrot.safetensors` | [Comfy-Org / MOSS-Image INT8 ConvRot](https://huggingface.co/Comfy-Org/MOSS-Image/blob/main/diffusion_models/moss_image_sft_int8_convrot.safetensors) |
-| `moss_image_sft_bf16.safetensors` | [Comfy-Org / MOSS-Image SFT BF16](https://huggingface.co/Comfy-Org/MOSS-Image/blob/main/diffusion_models/moss_image_sft_bf16.safetensors) |
-| `qwen3.5_9b_int8_convrot.safetensors` | [Comfy-Org / text encoder](https://huggingface.co/Comfy-Org/MOSS-Image/blob/main/text_encoders/qwen3.5_9b_int8_convrot.safetensors) |
-| `flux2-vae.safetensors` | [Comfy-Org / original VAE](https://huggingface.co/Comfy-Org/MOSS-Image/blob/main/vae/flux2-vae.safetensors) |
-| `full_encoder_small_decoder.safetensors` | [Black Forest Labs / FLUX.2 Small Decoder](https://huggingface.co/black-forest-labs/FLUX.2-small-decoder/blob/main/full_encoder_small_decoder.safetensors) |
-| `lora_latest.safetensors` | [lodestones / 8-step acceleration LoRA](https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd/blob/main/lora_latest.safetensors) |
-
-拡散モデルはComfyUIのmodels/diffusion_models、エンコーダーはmodels/text_encoders、VAEはmodels/vae、LoRAはmodels/lorasへ配置します。JSON中のサブフォルダーや名前が手元と違う場合は、各Loaderで導入したファイルを選び直してください。MOSS-Image対応版のComfyUIが必要です。モデルは同梱していません。上記リンクの重みが将来更新される場合があるため、同じファイル名だけで完全一致は保証できません。
-
-## 自分の画像登録と判定の共有
-
-「Add Image／画像を追加」でキャラクターとスタイルの両方を登録できます。名前・作品／分類・再利用プロンプト・元タグ・保存workflowを必要に応じて入力し、Register／登録で保存します。「Webで画像を検索」は入力した名前・作品を新しいタブで検索する補助です。検索結果を自動で登録・転載する機能ではありません。
-
-比較画面で合格・不合格・保留を人が選び、反映対象をチェックして「選択した判定を確定してJSON出力」で保存します。カタログ上部の **「判定JSONを読み込む」** からそのJSONを選ぶと、合格・不合格の件数、表示に戻す／非表示にする件数を確認できます。**「確認した判定を反映」** を押すまで変更しません。保留・未選択・未確定は除外し、別の画像に入れ替わっている場合は反映を拒否します。画像やお気に入りは削除しません。
-
-このJSONを同じ画像入りのカタログを使う人と共有できます。CSVの一覧保存とは別の形式です。参照画像のないスタイルもMOSS画像だけで判定でき、単独判定と参照比較を区別して記録します。読み込み時はMOSS画像の一致を検証し、共有者の目視判定を取り込むもので、利用者のPCで参照画像との比較をやり直したり自動判定したりはしません。
-
-キャラクターの初期並びはCopyright (most first)／作品件数順です。同一シリーズをまとめて多い順に並べ、Originalと少数作品は「その他の作品・オリジナル」にまとめて末尾へ送ります。生成順の古い順・新しい順も選べます。
-
-## 公開範囲とライセンス
-
-現在公開している文書は [MIT License](LICENSE) です。[NOTICE.md](NOTICE.md) の範囲を参照してください。まだ公開していないアプリ・画像・モデル・第三者素材への許諾を意味しません。本プロジェクトはOpenMOSSまたはAnimaDexの公式製品ではありません。作品名・キャラクター名は対象の識別用です。
+管理者作成の説明書と公開デモのコードは[MIT License](LICENSE)の対象です。生成サンプル画像、第三者のキャラクター・モデル等の権利は[NOTICE.md](NOTICE.md)で区別しています。モデル本体、参照画像ライブラリー、認証情報、個人の判定状態は公開しません。誤りの報告には画像・スタイル名とカタログのバージョンを添えてください。

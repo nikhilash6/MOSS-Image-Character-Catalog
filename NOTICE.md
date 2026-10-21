@@ -1,26 +1,33 @@
 # License scope and notices
 
-## MIT scope
+## Documentation and demo code
 
-The MIT License applies to the current documentation in `README.md`
-and `README.ja.md` and the maintainer-authored licensing documentation.
-At the time of this grant, this repository contains no application code,
-image collection, model weights, or downloadable application package.
+The [MIT License](LICENSE) covers the maintainer-authored documentation,
+static demo HTML/CSS/JavaScript, validation script and Pages workflow published
+in this repository. The demo frontend is adapted from the same maintainer's
+[Krea2 Character Catalog](https://github.com/ukr8b3g-cmyk/Krea2-Character-Catalog).
 
-This grant does not prospectively license materials that have not been
-included in the repository. Any later application, generated images,
-source tag data, AnimaDex references, or other third-party material require
-their own scope and applicable terms to be documented when published.
+This scope does not prospectively license the unpublished full local
+application or other materials that have not been included in this repository.
 
-## Rights and third-party material
+## Generated samples
 
-This grant covers only rights held by ukr8b3g-cmyk. Existing third-party
-copyrights, character rights, trademarks, and other rights remain with their
-respective owners. It does not relicense external applications, dependencies,
-fonts, model weights, or models used to generate images. Their own terms
-continue to apply. References to products or compatibility do not imply
-authorship of their code or endorsement.
+`demo/images/` contains 120 MOSS-Image-generated samples. `demo/catalog.json`
+contains their names, reusable prompt/tag text and browsing metadata.
+These are demonstration material, not original reference artwork, verified
+identity labels, or a pass/fail-selected collection. Artist, character and work
+names describe the requested subject/style, not endorsement or authorship.
 
-This notice explains the scope of [LICENSE](LICENSE); it adds no conditions
-to the MIT License. Preserve applicable notices for any third-party material
-actually included in a redistribution.
+The code's MIT grant is not a grant of third-party character, artwork,
+trademark, likeness or model rights. Generated images are not represented as
+public domain, exclusively owned, or cleared for every downstream use.
+Model publishers' applicable terms and existing third-party rights remain
+unchanged. Check those terms for your intended use or redistribution.
+
+The public sample files omit EXIF/XMP workflow metadata, private review
+state, backend credentials and local file paths. Their encoded image content
+is unchanged. Model weights, AnimaDex/Krea2 reference images and the full
+catalog archive are not included.
+
+This independent project is not an official OpenMOSS, Krea2 or AnimaDex product.
+This notice clarifies scope and adds no conditions to the MIT License.
