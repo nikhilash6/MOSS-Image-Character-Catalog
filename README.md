@@ -1,4 +1,6 @@
 ## [▶ Open the live demo — 120 sample images](https://ukr8b3g-cmyk.github.io/MOSS-Image-Character-Catalog/)
+<img width="1887" height="1013" alt="Clip_37" src="https://github.com/user-attachments/assets/f37ba1b4-12d7-4915-a7fe-f6506990f50b" />
+
 
 ### [↓ Download the complete catalog ZIP — v0.1.0](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.0/MOSS-Image-Character-Catalog-v0.1.0.zip)
 
