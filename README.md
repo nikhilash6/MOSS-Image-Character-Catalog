@@ -94,6 +94,24 @@ This check concerns the **local catalog application**, separately from the Comfy
 
 **Python 3.10+ is the declared minimum, not a claim that every later version has been fully tested.** These results show that the limited checks above pass on 3.13.12; they do not explain an individual user's startup failure. For a failure report, include the actual Python/Pillow versions and the startup error text or `app/outputs/review_server.err.log`, if created.
 
+#### Additional Linux validation in Codex Cloud — 2026-10-22
+
+A separate **Codex Cloud verification report** records tests of the **official v0.1.0 Release ZIP** on **Debian 13, x86_64**, using isolated environments and **Pillow 12.3.0**. The downloaded ZIP matched the published SHA256. This records the supplied cloud report; the underlying cloud logs were not independently rechecked in the Windows session.
+
+| CPython | Pillow | Dependency installation / pip check | Imports / startup / browser operations / save and restart |
+|---|---|---|---|
+| 3.10.22 | 12.3.0 | Passed | Passed |
+| 3.11.17 | 12.3.0 | Passed | Passed |
+| 3.12.15 | 12.3.0 | Passed | Passed |
+| 3.13.16 | 12.3.0 | Passed | Passed |
+| 3.14.8 | 12.3.0 | Passed | Passed |
+
+**Reported coverage:** the shipped Linux launcher with an explicitly selected Python; syntax checks for 13 Python files and imports of 11 modules; eight real Release images (six characters and two styles); searching, enlargement, clipboard copying, sorting, language/theme switching, editing and saving, registering a test PNG, and persistence after reload and normal stop/restart. Browser operations used headless Chromium 154.0.8037.57. Japanese characters and spaces in application/environment paths and filenames were tested. Only test copies were edited; product code and original data were unchanged.
+
+**Not covered by the cloud run:** Windows-specific startup, macOS, automatic Python discovery, automatic environment/dependency preparation, automatic desktop-browser opening, all 34,158 images or full-collection performance, end-to-end comparison/review-JSON import, or other Python patch versions/platforms. No application unit tests were bundled, so none were run. No required-function failure was reproduced; the optional `/favicon.ico` request returned 404, without blocking the tested operations. No product fix was applied.
+
+The Linux results extend the tested combinations; they do not turn the limited Windows check above into full Windows validation or identify the cause of an individual user's startup failure. **“Python 3.10+” means 3.10 or newer, not 3.10 only.**
+
 ### Find, copy and register images
 
 1. Select **Characters** or **Styles**. Characters start in **Copyright (most first)** order, grouped by series. **Other works / Original** appears last. Works with 20 or fewer saved images are grouped there.
