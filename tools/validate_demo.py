@@ -63,7 +63,7 @@ def validate():
     for name in ['README.md','README.ja.md']:
         text = (ROOT/name).read_text(encoding='utf-8')
         for required in ['33,937','221','34,158','247','468','2.05 GB','1.91 GiB',
-                         '/releases/download/v0.1.1/MOSS-Image-Character-Catalog-v0.1.1.zip',
+                         '/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip',
                          'MOSS_Image_Character_Sample.json','MOSS_Image_Style_Sample.json',
                          '8961184','1.0','25','2.5']:
             assert required in text, (name,required)

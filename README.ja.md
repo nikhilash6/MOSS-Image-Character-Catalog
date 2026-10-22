@@ -2,9 +2,9 @@
 <img width="1887" height="1013" alt="Clip_37" src="https://github.com/user-attachments/assets/19c619e5-21dd-464f-90a6-b3c24a22c8fc" />
 
 
-### [↓ 全件版ZIPをダウンロード — v0.1.1](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.1/MOSS-Image-Character-Catalog-v0.1.1.zip)
+### [↓ 全件版ZIPをダウンロード — v0.1.2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)
 
-**34,158枚・約2.05 GB／1.91 GiB** · [リリース情報](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.1) · [SHA256チェックサム](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.1/SHA256SUMS.txt)
+**34,158枚・約2.05 GB／1.91 GiB** · [リリース情報](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256チェックサム](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
 
 > [!NOTE]
 > **ライブデモは、カタログ全体の一部だけを抜粋したプレビューです。**
@@ -25,10 +25,10 @@
 | スタイル | **221枚** |
 | **合計** | **34,158枚** |
 | 圧縮前のファイル合計 | **約2.75 GB／2.56 GiB** |
-| 配布ZIP・DEFLATE 6 | **約2.05 GB／1.91 GiB** |
+| 配布ZIP・標準DEFLATE | **約2.05 GB／1.91 GiB** |
 | オンラインデモ | **キャラクター96枚＋スタイル24枚**、約**8.36 MB** |
 
-**公開状況（2026-10-22）：** **[v0.1.1・全件版ZIPをダウンロード](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.1/MOSS-Image-Character-Catalog-v0.1.1.zip)**できます。ローカルアプリ、**キャラクター33,937枚＋スタイル221枚**、比較判定ツール、サンプルワークフローJSON 2件を同梱しています。オンラインデモは抜粋120枚です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書のため、全件版にはReleaseのZIPを使ってください。モデルや参照画像ライブラリーは別途用意してください。
+**公開状況（2026-10-23）：** **[v0.1.2・全件版ZIPをダウンロード](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)**できます。ローカルアプリ、**キャラクター33,937枚＋スタイル221枚**、比較判定ツール、サンプルワークフローJSON 2件を同梱しています。オンラインデモは抜粋120枚です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書のため、全件版にはReleaseのZIPを使ってください。モデルや参照画像ライブラリーは別途用意してください。
 
 **画像の合格・不合格による選別はしていません。** キャラクターが違うもの、プロンプトと合わないもの、画風の効きが弱いものも含みます。収録や見た目の類似は、正確な再現や学習データへの収録を証明しません。デモの抜粋も「合格した画像の一覧」ではありません。
 
@@ -65,11 +65,11 @@
 
 衣装・形態差分・テストも1枚として数えています。ユニークな人物数ではありません。Krea2の画像や判定結果は取り込んでいません。スタイル221枚は先行40枚と追加181枚で、英文で画風の特徴を指定しています。画家名・媒体・アニメ表現などを試した結果であり、再現精度の保証ではありません。
 
-全件版ZIPは標準圧縮（DEFLATE 6）で**約2.05 GB／1.91 GiB**です。正確なバイト数とSHA256は[リリースページ](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.1)に掲載します。モデル・個人設定・ログ・ロック・参照画像ライブラリーは含みません。デモ内の絞り込み件数は抜粋分の件数で、全件版の作品別枚数とは異なります。
+全件版ZIPは標準圧縮（DEFLATE）で**約2.05 GB／1.91 GiB**です。正確なバイト数とSHA256は[リリースページ](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2)に掲載します。モデル・個人設定・ログ・ロック・参照画像ライブラリーは含みません。デモ内の絞り込み件数は抜粋分の件数で、全件版の作品別枚数とは異なります。
 
 ## ダウンロードとローカル版の使い方
 
-上のリンクからZIPをダウンロードして展開し、フォルダー全体を保持してください。Windowsでは `Get-FileHash .\MOSS-Image-Character-Catalog-v0.1.1.zip -Algorithm SHA256` の結果を `SHA256SUMS.txt` と照合できます。閲覧・登録に必要なのは**Python 3.10以上とWebブラウザー**です。GPUは別途画像生成する場合に使います。
+上のリンクからZIPをダウンロードして展開し、フォルダー全体を保持してください。Windowsでは `Get-FileHash .\MOSS-Image-Character-Catalog-v0.1.2.zip -Algorithm SHA256` の結果を `SHA256SUMS.txt` と照合できます。閲覧・登録に必要なのは**Python 3.10以上とWebブラウザー**です。GPUは別途画像生成する場合に使います。
 
 | OS | 起動するファイル |
 |---|---|
@@ -111,6 +111,14 @@
 **クラウド検証の対象外：** Windows固有の起動処理、macOS、Pythonの自動検出、環境・依存関係の自動準備、デスクトップブラウザーの自動起動、全34,158枚や全件版の性能、比較判定・判定JSON取り込みの一連の操作、記載以外のPythonパッチバージョン・環境。アプリ用単体テストは同梱されていないため未実施です。必須機能の不具合は再現せず、任意の `/favicon.ico` の404だけが記録されましたが、確認した操作を妨げていません。製品の修正は行っていません。
 
 このLinuxでの結果は、確認済みの組み合わせを追加するものです。上の限定的なWindows確認をWindows全機能の検証済みとするものでも、個別の起動失敗の原因を特定するものでもありません。**「Python 3.10以上」は3.10限定ではなく、それ以降も含む意味です。**
+
+### v0.1.2の変更点 — Windows起動修正
+
+[Issue #1](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/issues/1) の報告に対応しました。Windows起動ファイルのタイトル中の `&` をエスケープし、Python探索を `py.exe -0p` の一覧解析から、Python自身への `sys.executable` の問い合わせに変更しました。PATHの有効なPythonを先に採用し、比較ツール側にも同じ修正を適用しています。問い合わせ時にPythonを自動インストールすることはありません。
+
+**今回の確認：** Windows PowerShell 5.1／cmd.exe、Miniconda Python **3.13.11**・Pillow **12.2.0**。起動経路の16項目を確認し、独立した実アプリのコピーでカタログ・編集画面・APIの応答と通常終了、比較セットアップの `--help` まで確認しました。pyのみ・古い既定Pythonなどは明示的なテスト用ランチャーで模擬した条件です。報告者と同じPython探索の失敗条件、Python install manager全構成、全34,158枚での負荷、実ブラウザーの全操作、macOS/Linuxの再検証は未確認です。**Python 3.13そのものの非互換と確定したわけではありません。** 過去のPython 3.13.12／Pillow 12.3.0等の確認とは別の検証です。[変更内容と検証範囲](docs/releases/v0.1.2.md)。
+
+画像34,158枚・生成設定・未選別の状態・既存の並べ替えはv0.1.1と同じです。新規フォルダーへ全ZIPを展開し、個人の画像や判定データがある旧フォルダーは保持してください。
 
 ### v0.1.1の変更点
 

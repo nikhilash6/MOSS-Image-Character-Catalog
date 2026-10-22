@@ -4,9 +4,9 @@
 <img width="1887" height="1013" alt="Clip_37" src="https://github.com/user-attachments/assets/f37ba1b4-12d7-4915-a7fe-f6506990f50b" />
 
 
-### [↓ Download the complete catalog ZIP — v0.1.1](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.1/MOSS-Image-Character-Catalog-v0.1.1.zip)
+### [↓ Download the complete catalog ZIP — v0.1.2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)
 
-**34,158 images · about 2.05 GB / 1.91 GiB** · [Release notes](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.1) · [SHA256 checksums](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.1/SHA256SUMS.txt)
+**34,158 images · about 2.05 GB / 1.91 GiB** · [Release notes](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256 checksums](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
 
 > [!NOTE]
 > **The live demo is a preview showing only a small part of the collection.**
@@ -25,10 +25,10 @@ A searchable library of **MOSS-Image-generated images and reusable prompts**, bu
 | Styles | **221** |
 | **Total** | **34,158** |
 | Files before compression | **About 2.75 GB / 2.56 GiB** |
-| Release ZIP, DEFLATE 6 | **2.05 GB / 1.91 GiB** |
+| Release ZIP, standard DEFLATE | **2.05 GB / 1.91 GiB** |
 | Online demo | **96 characters + 24 styles**, about **8.36 MB** |
 
-**Release status — 2026-10-22:** **[v0.1.1 — Download the complete ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.1/MOSS-Image-Character-Catalog-v0.1.1.zip)** includes the local application, **33,937 character images + 221 styles**, comparison tools and both sample workflow JSON files. The online demo shows only 120 samples. GitHub **Code → Download ZIP** contains the demo and documentation; use the Release ZIP for the full collection. Model weights and reference libraries are separate downloads.
+**Release status — 2026-10-23:** **[v0.1.2 — Download the complete ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)** includes the local application, **33,937 character images + 221 styles**, comparison tools and both sample workflow JSON files. The online demo shows only 120 samples. GitHub **Code → Download ZIP** contains the demo and documentation; use the Release ZIP for the full collection. Model weights and reference libraries are separate downloads.
 
 **The collection has not been selected by pass/fail judgments.** Incorrect character identities, mismatched prompts and weak style results remain included. Neither inclusion nor resemblance proves training-set coverage or accurate reproduction. The demo is an interface sample, not a list of approved results.
 
@@ -65,11 +65,11 @@ This is a **character-list-based catalog with additional samples**, not an Anima
 
 Outfits, forms and tests count as separate images, not unique identities. Krea2 images and verdicts are not imported. The 221 styles include 40 earlier samples and 181 later additions. Their prompts describe visual characteristics in English; painter names, media and animation styles are experiments, not accuracy guarantees.
 
-The complete Release ZIP uses standard DEFLATE compression (level 6) and is about **2.05 GB / 1.91 GiB**. Its exact byte size and SHA256 are listed on the [release page](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.1). Model weights, personal settings, logs, locks and reference libraries are excluded. The online demo's filter counts describe its sample subset, not the full collection.
+The complete Release ZIP uses standard DEFLATE compression and is about **2.05 GB / 1.91 GiB**. Its exact byte size and SHA256 are listed on the [release page](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2). Model weights, personal settings, logs, locks and reference libraries are excluded. The online demo's filter counts describe its sample subset, not the full collection.
 
 ## Download and use the local version
 
-Download the ZIP above, extract it, and keep the extracted folder together. To verify the download on Windows, run `Get-FileHash .\MOSS-Image-Character-Catalog-v0.1.1.zip -Algorithm SHA256` and compare the result with `SHA256SUMS.txt`. You need **Python 3.10+ and a web browser** to view and manage images; GPU hardware is only needed for separate generation.
+Download the ZIP above, extract it, and keep the extracted folder together. To verify the download on Windows, run `Get-FileHash .\MOSS-Image-Character-Catalog-v0.1.2.zip -Algorithm SHA256` and compare the result with `SHA256SUMS.txt`. You need **Python 3.10+ and a web browser** to view and manage images; GPU hardware is only needed for separate generation.
 
 | OS | Startup file |
 |---|---|
@@ -111,6 +111,14 @@ A separate **Codex Cloud verification report** records tests of the **official v
 **Not covered by the cloud run:** Windows-specific startup, macOS, automatic Python discovery, automatic environment/dependency preparation, automatic desktop-browser opening, all 34,158 images or full-collection performance, end-to-end comparison/review-JSON import, or other Python patch versions/platforms. No application unit tests were bundled, so none were run. No required-function failure was reproduced; the optional `/favicon.ico` request returned 404, without blocking the tested operations. No product fix was applied.
 
 The Linux results extend the tested combinations; they do not turn the limited Windows check above into full Windows validation or identify the cause of an individual user's startup failure. **“Python 3.10+” means 3.10 or newer, not 3.10 only.**
+
+### What changed in v0.1.2 — Windows startup fixes
+
+Addresses [Issue #1](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/issues/1): escape `&` in the Windows launcher title and replace parsing of `py.exe -0p` output with a query to Python for `sys.executable`. A working PATH interpreter is checked first; the comparison bootstrap receives the same fix. Discovery does not request automatic Python installation.
+
+**Checked for this patch:** Windows PowerShell 5.1 / cmd.exe, Miniconda Python **3.13.11** and Pillow **12.2.0**. Sixteen startup cases passed; an isolated copy of the real app served the catalog, editor and JSON APIs and shut down normally. The comparison setup entry point passed `--help`. Py-only and old-default cases used labelled test launchers. The reporter's exact discovery failure, every Python install-manager configuration, full-collection load, all browser interactions and renewed macOS/Linux checks remain unverified. **This is not a confirmed general incompatibility with Python 3.13.** These checks are separate from the previously documented Python 3.13.12 / Pillow 12.3.0 results. [Changes and validation limits](docs/releases/v0.1.2.md).
+
+The same 34,158 images, generation settings, uncurated state and sorting behavior are retained from v0.1.1. Extract the entire ZIP into a new folder; preserve your previous folder if it contains personal images, edits or review data.
 
 ### What changed in v0.1.1
 

@@ -1,0 +1,27 @@
+name: Validate Windows startup
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'launchers/windows/**'
+      - 'tools/test_windows_startup.py'
+      - '.github/workflows/windows-startup.yml'
+  pull_request:
+    paths:
+      - 'launchers/windows/**'
+      - 'tools/test_windows_startup.py'
+      - '.github/workflows/windows-startup.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  startup:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Check Windows launchers without starting a server
+        run: python -B tools/test_windows_startup.py
