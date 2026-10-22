@@ -2,9 +2,9 @@
 <img width="1887" height="1013" alt="Clip_37" src="https://github.com/user-attachments/assets/19c619e5-21dd-464f-90a6-b3c24a22c8fc" />
 
 
-### [↓ 全件版ZIPをダウンロード — v0.1.0](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.0/MOSS-Image-Character-Catalog-v0.1.0.zip)
+### [↓ 全件版ZIPをダウンロード — v0.1.1](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.1/MOSS-Image-Character-Catalog-v0.1.1.zip)
 
-**34,158枚・約2.05 GB／1.91 GiB** · [リリース情報](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.0) · [SHA256チェックサム](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.0/SHA256SUMS.txt)
+**34,158枚・約2.05 GB／1.91 GiB** · [リリース情報](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.1) · [SHA256チェックサム](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.1/SHA256SUMS.txt)
 
 > [!NOTE]
 > **ライブデモは、カタログ全体の一部だけを抜粋したプレビューです。**
@@ -28,7 +28,7 @@
 | 配布ZIP・DEFLATE 6 | **約2.05 GB／1.91 GiB** |
 | オンラインデモ | **キャラクター96枚＋スタイル24枚**、約**8.36 MB** |
 
-**公開状況（2026-10-22）：** **[v0.1.0・全件版ZIPをダウンロード](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.0/MOSS-Image-Character-Catalog-v0.1.0.zip)**できます。ローカルアプリ、**キャラクター33,937枚＋スタイル221枚**、比較判定ツール、サンプルワークフローJSON 2件を同梱しています。オンラインデモは抜粋120枚です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書のため、全件版にはReleaseのZIPを使ってください。モデルや参照画像ライブラリーは別途用意してください。
+**公開状況（2026-10-22）：** **[v0.1.1・全件版ZIPをダウンロード](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.1/MOSS-Image-Character-Catalog-v0.1.1.zip)**できます。ローカルアプリ、**キャラクター33,937枚＋スタイル221枚**、比較判定ツール、サンプルワークフローJSON 2件を同梱しています。オンラインデモは抜粋120枚です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書のため、全件版にはReleaseのZIPを使ってください。モデルや参照画像ライブラリーは別途用意してください。
 
 **画像の合格・不合格による選別はしていません。** キャラクターが違うもの、プロンプトと合わないもの、画風の効きが弱いものも含みます。収録や見た目の類似は、正確な再現や学習データへの収録を証明しません。デモの抜粋も「合格した画像の一覧」ではありません。
 
@@ -65,11 +65,11 @@
 
 衣装・形態差分・テストも1枚として数えています。ユニークな人物数ではありません。Krea2の画像や判定結果は取り込んでいません。スタイル221枚は先行40枚と追加181枚で、英文で画風の特徴を指定しています。画家名・媒体・アニメ表現などを試した結果であり、再現精度の保証ではありません。
 
-全件版ZIPは標準圧縮（DEFLATE 6）で**約2.05 GB／1.91 GiB**です。正確なバイト数とSHA256は[リリースページ](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.0)に掲載します。モデル・個人設定・ログ・ロック・参照画像ライブラリーは含みません。デモ内の絞り込み件数は抜粋分の件数で、全件版の作品別枚数とは異なります。
+全件版ZIPは標準圧縮（DEFLATE 6）で**約2.05 GB／1.91 GiB**です。正確なバイト数とSHA256は[リリースページ](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.1)に掲載します。モデル・個人設定・ログ・ロック・参照画像ライブラリーは含みません。デモ内の絞り込み件数は抜粋分の件数で、全件版の作品別枚数とは異なります。
 
 ## ダウンロードとローカル版の使い方
 
-上のリンクからZIPをダウンロードして展開し、フォルダー全体を保持してください。Windowsでは `Get-FileHash .\MOSS-Image-Character-Catalog-v0.1.0.zip -Algorithm SHA256` の結果を `SHA256SUMS.txt` と照合できます。閲覧・登録に必要なのは**Python 3.10以上とWebブラウザー**です。GPUは別途画像生成する場合に使います。
+上のリンクからZIPをダウンロードして展開し、フォルダー全体を保持してください。Windowsでは `Get-FileHash .\MOSS-Image-Character-Catalog-v0.1.1.zip -Algorithm SHA256` の結果を `SHA256SUMS.txt` と照合できます。閲覧・登録に必要なのは**Python 3.10以上とWebブラウザー**です。GPUは別途画像生成する場合に使います。
 
 | OS | 起動するファイル |
 |---|---|
@@ -112,9 +112,13 @@
 
 このLinuxでの結果は、確認済みの組み合わせを追加するものです。上の限定的なWindows確認をWindows全機能の検証済みとするものでも、個別の起動失敗の原因を特定するものでもありません。**「Python 3.10以上」は3.10限定ではなく、それ以降も含む意味です。**
 
+### v0.1.1の変更点
+
+**Copyright件数順**では、作品同士を登録画像枚数順にまとめたうえで、作品内のキャラクター画像を**元CSVのカウントが多い順**に表示するようにしました。同数は名前・画像キー順、カウントを持たない新規登録画像は同じ作品のカウント付き画像の後に並びます。名前順・生成順は従来どおりです。カウントは取得時の参考値で、現在の人気順位を示すものではありません。キャラクター33,937枚・スタイル221枚の画像は変更せず、合否による選別も追加していません。[変更内容](docs/releases/v0.1.1.md)。
+
 ### 探す・コピーする・画像を追加する
 
-1. **キャラクター／スタイル**を切り替えます。キャラクターの初期表示は **Copyright件数順**で、作品・シリーズ単位にまとまります。**その他の作品／オリジナル**は最後に配置し、登録済み20枚以下の作品もここへまとめます。
+1. **キャラクター／スタイル**を切り替えます。キャラクターの初期表示は **Copyright件数順**で、作品・シリーズ単位にまとめ、作品内は元CSVのカウント降順に並びます。**その他の作品／オリジナル**は最後に配置し、登録済み20枚以下の作品もここへまとめます。
 2. **生成順（新しい順）／生成順（古い順）**で、MOSS画像の保存時刻を基準に並べ替えられます。画像をクリックすると拡大します。**スタイルコピー**には画風の文章だけを含め、共通の見本シーンを除きます。
 3. **画像を追加（Add Image）**でキャラクター／スタイルを選び、WebP・PNG・JPEGを指定します。名前・作品／分類・再利用プロンプト・元タグ・ワークフローJSONは任意です。登録するとローカルに保存され、空欄の名前にはファイル名を使います。
 4. **Web画像検索**は入力した名前・作品を別タブで検索する補助機能です。検索画像を自動登録しません。保存済み画像の詳細にある**編集**から、後で内容を直せます。

@@ -6,6 +6,7 @@ on:
     paths:
       - 'demo/**'
       - 'tools/validate_demo.py'
+      - 'tools/check_sort_order.cjs'
       - '.github/workflows/pages.yml'
       - 'README*.md'
       - 'NOTICE.md'
@@ -29,6 +30,8 @@ jobs:
         run: python3 tools/validate_demo.py
       - name: Check frontend syntax
         run: node --check demo/review.js
+      - name: Check source-count ordering
+        run: node tools/check_sort_order.cjs
       - uses: actions/upload-pages-artifact@v4
         with:
           path: demo

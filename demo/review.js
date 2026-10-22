@@ -270,7 +270,11 @@
     if(order==='newest'||order==='oldest'){const generated=r=>r.generated===false?0:1,direction=order==='newest'?-1:1;return generated(b)-generated(a)||direction*(first.renderedSort-second.renderedSort)||direction*compare(a.key,b.key);}
     const otherOrder=Number(copyrightCountKey(a)===smallCopyrightGroup)-Number(copyrightCountKey(b)===smallCopyrightGroup);if(otherOrder)return otherOrder;
     const counts=copyrightTotals(),countOrder=(counts.get(copyrightCountKey(b))||0)-(counts.get(copyrightCountKey(a))||0);
-    return countOrder||compare(first.copyrightSort,second.copyrightSort)||compare(a.name,b.name)||compare(a.key,b.key);
+    const copyrightOrder=compare(first.copyrightSort,second.copyrightSort);
+    if(countOrder||copyrightOrder)return countOrder||copyrightOrder;
+    const sourceCount=r=>Number.isSafeInteger(r.source_count)&&r.source_count>=0?r.source_count:-1;
+    const sourceOrder=(a.kind||'character')==='character'&&(b.kind||'character')==='character'?sourceCount(b)-sourceCount(a):0;
+    return sourceOrder||compare(a.name,b.name)||compare(a.key,b.key);
   }
 
   function facetCounts(key){

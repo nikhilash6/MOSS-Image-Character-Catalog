@@ -4,9 +4,9 @@
 <img width="1887" height="1013" alt="Clip_37" src="https://github.com/user-attachments/assets/f37ba1b4-12d7-4915-a7fe-f6506990f50b" />
 
 
-### [↓ Download the complete catalog ZIP — v0.1.0](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.0/MOSS-Image-Character-Catalog-v0.1.0.zip)
+### [↓ Download the complete catalog ZIP — v0.1.1](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.1/MOSS-Image-Character-Catalog-v0.1.1.zip)
 
-**34,158 images · about 2.05 GB / 1.91 GiB** · [Release notes](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.0) · [SHA256 checksums](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.0/SHA256SUMS.txt)
+**34,158 images · about 2.05 GB / 1.91 GiB** · [Release notes](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.1) · [SHA256 checksums](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.1/SHA256SUMS.txt)
 
 > [!NOTE]
 > **The live demo is a preview showing only a small part of the collection.**
@@ -28,7 +28,7 @@ A searchable library of **MOSS-Image-generated images and reusable prompts**, bu
 | Release ZIP, DEFLATE 6 | **2.05 GB / 1.91 GiB** |
 | Online demo | **96 characters + 24 styles**, about **8.36 MB** |
 
-**Release status — 2026-10-22:** **[v0.1.0 — Download the complete ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.0/MOSS-Image-Character-Catalog-v0.1.0.zip)** includes the local application, **33,937 character images + 221 styles**, comparison tools and both sample workflow JSON files. The online demo shows only 120 samples. GitHub **Code → Download ZIP** contains the demo and documentation; use the Release ZIP for the full collection. Model weights and reference libraries are separate downloads.
+**Release status — 2026-10-22:** **[v0.1.1 — Download the complete ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.1/MOSS-Image-Character-Catalog-v0.1.1.zip)** includes the local application, **33,937 character images + 221 styles**, comparison tools and both sample workflow JSON files. The online demo shows only 120 samples. GitHub **Code → Download ZIP** contains the demo and documentation; use the Release ZIP for the full collection. Model weights and reference libraries are separate downloads.
 
 **The collection has not been selected by pass/fail judgments.** Incorrect character identities, mismatched prompts and weak style results remain included. Neither inclusion nor resemblance proves training-set coverage or accurate reproduction. The demo is an interface sample, not a list of approved results.
 
@@ -65,11 +65,11 @@ This is a **character-list-based catalog with additional samples**, not an Anima
 
 Outfits, forms and tests count as separate images, not unique identities. Krea2 images and verdicts are not imported. The 221 styles include 40 earlier samples and 181 later additions. Their prompts describe visual characteristics in English; painter names, media and animation styles are experiments, not accuracy guarantees.
 
-The complete Release ZIP uses standard DEFLATE compression (level 6) and is about **2.05 GB / 1.91 GiB**. Its exact byte size and SHA256 are listed on the [release page](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.0). Model weights, personal settings, logs, locks and reference libraries are excluded. The online demo's filter counts describe its sample subset, not the full collection.
+The complete Release ZIP uses standard DEFLATE compression (level 6) and is about **2.05 GB / 1.91 GiB**. Its exact byte size and SHA256 are listed on the [release page](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.1). Model weights, personal settings, logs, locks and reference libraries are excluded. The online demo's filter counts describe its sample subset, not the full collection.
 
 ## Download and use the local version
 
-Download the ZIP above, extract it, and keep the extracted folder together. To verify the download on Windows, run `Get-FileHash .\MOSS-Image-Character-Catalog-v0.1.0.zip -Algorithm SHA256` and compare the result with `SHA256SUMS.txt`. You need **Python 3.10+ and a web browser** to view and manage images; GPU hardware is only needed for separate generation.
+Download the ZIP above, extract it, and keep the extracted folder together. To verify the download on Windows, run `Get-FileHash .\MOSS-Image-Character-Catalog-v0.1.1.zip -Algorithm SHA256` and compare the result with `SHA256SUMS.txt`. You need **Python 3.10+ and a web browser** to view and manage images; GPU hardware is only needed for separate generation.
 
 | OS | Startup file |
 |---|---|
@@ -112,9 +112,13 @@ A separate **Codex Cloud verification report** records tests of the **official v
 
 The Linux results extend the tested combinations; they do not turn the limited Windows check above into full Windows validation or identify the cause of an individual user's startup failure. **“Python 3.10+” means 3.10 or newer, not 3.10 only.**
 
+### What changed in v0.1.1
+
+**Copyright (most first)** still groups works by their saved image count. Within each work, character images now follow the **original source CSV count, descending**, instead of alphabetical order. Ties use name, then image key; new user images without source counts appear after counted entries within the same work. Name and generation-order options are unchanged. The source count is a recorded reference value, not a current popularity measurement. The 33,937 character images and 221 styles are unchanged; no pass/fail selection has been added. [Release changes](docs/releases/v0.1.1.md).
+
 ### Find, copy and register images
 
-1. Select **Characters** or **Styles**. Characters start in **Copyright (most first)** order, grouped by series. **Other works / Original** appears last. Works with 20 or fewer saved images are grouped there.
+1. Select **Characters** or **Styles**. Characters start in **Copyright (most first)** order, grouped by series, with characters inside each work ordered by source CSV count (descending). **Other works / Original** appears last. Works with 20 or fewer saved images are grouped there.
 2. Use **Generation (newest first)** or **Generation (oldest first)** for the saved MOSS image chronology. Click an image to inspect it. **Copy style** copies the style description without the shared demonstration scene.
 3. Select **Add Image**, choose Character or Style, then select a WebP, PNG or JPEG. Names, category, reusable prompt, original tags and workflow JSON are optional. Register saves a local catalog entry; blank names use the filename.
 4. **Web image search** opens your entered name/category in a new tab to help with research. Search results are not automatically imported. Use **Edit** in an image's detail view to correct its metadata later.

@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / 'demo'
 FIELDS = {'name','name_jp','name_cn','copyright','kind','copy_prompt','copy_tags',
           'subject_type','facets','rendered_at','added_at','id','key','run_id',
-          'demo_image','image_sha256','generated','hidden','deleted','favorite','similarity'}
+          'demo_image','image_sha256','source_count','generated','hidden','deleted','favorite','similarity'}
 
 
 def validate():
@@ -23,6 +23,8 @@ def validate():
     for row in rows:
         assert set(row) <= FIELDS, 'Unexpected public metadata field'
         assert row['generated'] is True
+        if row['kind'] == 'character':
+            assert isinstance(row['source_count'], int) and row['source_count'] >= 0
         assert not any(row[k] for k in ('hidden','deleted','favorite','similarity'))
         assert re.fullmatch(r'images/[0-9]{3}\.webp',row['demo_image'])
         path = SITE / row['demo_image']
@@ -61,7 +63,7 @@ def validate():
     for name in ['README.md','README.ja.md']:
         text = (ROOT/name).read_text(encoding='utf-8')
         for required in ['33,937','221','34,158','247','468','2.05 GB','1.91 GiB',
-                         '/releases/download/v0.1.0/MOSS-Image-Character-Catalog-v0.1.0.zip',
+                         '/releases/download/v0.1.1/MOSS-Image-Character-Catalog-v0.1.1.zip',
                          'MOSS_Image_Character_Sample.json','MOSS_Image_Style_Sample.json',
                          '8961184','1.0','25','2.5']:
             assert required in text, (name,required)
