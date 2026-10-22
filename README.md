@@ -79,6 +79,21 @@ Download the ZIP above, extract it, and keep the extracted folder together. To v
 
 The preferred address is `http://127.0.0.1:8797/`. If it is occupied, use the address opened/reported by the launcher. **Stop server** ends this catalog's process; closing a tab is separate. A compatible Python is reused, or the launcher prepares a private environment. Initial dependency setup may need internet access.
 
+### Catalog runtime check — 2026-10-22
+
+This check concerns the **local catalog application**, separately from the ComfyUI image-generation environment below. The tested combination was **Windows, CPython 3.13.12 (64-bit) and Pillow 12.3.0 with WebP support**, in a private test environment. Python discovery was restricted to that 3.13 environment so the launcher could not silently fall back to Python 3.10.
+
+**Confirmed in this check:**
+
+- Catalog and comparison Python modules imported successfully. The Windows PowerShell bootstrap selected Python 3.13.12 and launched the catalog.
+- The catalog `/` and editor `/editor` routes returned HTTP 200; `/api/info` and `/api/list` returned valid JSON.
+- The catalog image inspector decoded one 896 × 1184 WebP sample from the v0.1.0 ZIP.
+- The launcher, bootstrap and Pillow requirements used in the test matched the released ZIP. The temporary HTTP service was shut down after testing.
+
+**Not covered by this check:** browser rendering or interactive operations; Add Image, editing, favorites, Hide/Undo, comparison judgments or review-JSON import end to end; loading or browsing all 34,158 images; macOS/Linux; or every Python/Pillow version and installation type. The HTTP test used an **empty isolated catalog fixture**, not the complete collection. Successful module imports do not establish that the comparison workflow was tested end to end.
+
+**Python 3.10+ is the declared minimum, not a claim that every later version has been fully tested.** These results show that the limited checks above pass on 3.13.12; they do not explain an individual user's startup failure. For a failure report, include the actual Python/Pillow versions and the startup error text or `app/outputs/review_server.err.log`, if created.
+
 ### Find, copy and register images
 
 1. Select **Characters** or **Styles**. Characters start in **Copyright (most first)** order, grouped by series. **Other works / Original** appears last. Works with 20 or fewer saved images are grouped there.
