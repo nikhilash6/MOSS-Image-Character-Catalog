@@ -120,7 +120,8 @@ def publish(work, target, sums, result):
     body=f'**[全件版ZIPをダウンロード / Download the complete ZIP]({url}{NAME})** — {result["size"]:,} bytes（約2.05 GB / 1.91 GiB）\n\n'
     body+=f'[SHA256SUMS.txt]({url}SHA256SUMS.txt) · [日本語README](https://github.com/{REPO}/blob/main/README.ja.md) · [English README](https://github.com/{REPO}/blob/main/README.md)\n\n'
     body+='**2026-10-24 refresh / 配布ZIP更新:** 太字タイトルにGitHubリンクを追加し、日英READMEを更新しました。Images are unchanged: 33,937 characters + 221 styles.\n\n'
-    body+=(ROOT/'docs/releases/v0.1.2.md').read_text(encoding='utf-8')
+    notes=(ROOT/'docs/releases/v0.1.2.md').read_text(encoding='utf-8')
+    body+=notes.replace('](../updates/catalog-title-link.md)','](https://github.com/'+REPO+'/blob/main/docs/updates/catalog-title-link.md)')
     body+=f'\n\n## Archive verification / ZIP検証\n\n7-Zip archive test passed for all {result["entries"]:,} entries; all 34,158 image SHA256 values match the catalog. Six UI/documentation files were replaced or added. Earlier assets are retained with `before-title-link` in their names; use the main download above.\n\n```text\n{result["sha256"]}  {NAME}\n```\n'
     api('releases/'+str(RELEASE_ID),{'body':body},work)
     final=api('releases/'+str(RELEASE_ID));assets={a['name']:a for a in final['assets']}

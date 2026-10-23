@@ -39,3 +39,34 @@ jobs:
             ${{ runner.temp }}/title-link-release/verification.json
             ${{ runner.temp }}/title-link-release/publication.json
           if-no-files-found: ignore
+  notes:
+    if: contains(github.event.head_commit.message, '[sync-title-link-notes]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Normalize release-note links without changing assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/421022122 > release.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          release=json.loads(Path('release.json').read_text())
+          asset=next(a for a in release['assets'] if a['name']=='MOSS-Image-Character-Catalog-v0.1.2.zip')
+          assert asset['digest']=='sha256:2da24563dfe7654119e21baedc1ebc9bce3411f84e9b8b2c9ff02b31a116391f'
+          body=release['body'].replace('](../updates/catalog-title-link.md)','](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/blob/main/docs/updates/catalog-title-link.md)')
+          Path('notes.json').write_text(json.dumps({'body':body}),encoding='utf-8')
+          PY
+          gh api --method PATCH repos/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/421022122 --input notes.json > result.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          before=json.loads(Path('release.json').read_text())
+          after=json.loads(Path('result.json').read_text())
+          assert after['body']==json.loads(Path('notes.json').read_text())['body']
+          assert [(a['id'],a['name'],a['digest']) for a in before['assets']]==[(a['id'],a['name'],a['digest']) for a in after['assets']]
+          print('Release-note links updated; all assets unchanged')
+          PY
