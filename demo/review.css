@@ -166,3 +166,7 @@ html[data-catalog-mode="demo"] .actions,html[data-catalog-mode="demo"] .toolbar 
 .actions .comparison-button{margin-left:auto;background:#d98224;border-color:#edaa58;color:#211408;font-weight:600;white-space:nowrap}.actions .comparison-button:hover{background:#efa34b;border-color:#ffbf73}.actions .comparison-button:focus-visible{outline:2px solid #ffbf73;outline-offset:3px}
 
 #decision-import-dialog{width:min(680px,90vw);max-height:85vh;overflow:auto;padding:24px}#decision-import-dialog li{margin:6px 0}#decision-import-dialog button{margin:12px 12px 0 0}
+
+header h1 .catalog-home{color:inherit;text-decoration:none}
+header h1 .catalog-home:hover{text-decoration:underline;text-underline-offset:.14em}
+header h1 .catalog-home:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:2px}
