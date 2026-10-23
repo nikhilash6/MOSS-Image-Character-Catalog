@@ -1,0 +1,41 @@
+name: Refresh v0.1.2 title-link package
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/refresh-v012-title-link.yml']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: refresh-v012-title-link
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: contains(github.event.head_commit.message, '[publish-title-link-v012]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check existing packaging tools
+        run: |
+          python3 --version
+          7z i
+          gh --version
+      - name: Build, verify, and publish the approved refresh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/refresh_v012_title_link.py --publish --output "$RUNNER_TEMP/title-link-release"
+      - name: Preserve package verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v0.1.2-title-link-verification
+          path: |
+            ${{ runner.temp }}/title-link-release/verification.json
+            ${{ runner.temp }}/title-link-release/publication.json
+          if-no-files-found: ignore

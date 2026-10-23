@@ -8,6 +8,8 @@
 
 **34,158 images · about 2.05 GB / 1.91 GiB** · [Release notes](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256 checksums](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
 
+**v0.1.2 package refresh — 2026-10-24:** The catalog title now opens this repository in a new tab. The ZIP also includes updated English and Japanese READMEs. The 34,158 images and rendering settings are unchanged. The download filename stays the same; use the updated `SHA256SUMS.txt` on the Release page to verify this refreshed package. [Update details](docs/updates/catalog-title-link.md).
+
 > [!NOTE]
 > **The live demo is a preview showing only a small part of the collection.**
 >
@@ -28,7 +30,7 @@ A searchable library of **MOSS-Image-generated images and reusable prompts**, bu
 | Release ZIP, standard DEFLATE | **2.05 GB / 1.91 GiB** |
 | Online demo | **96 characters + 24 styles**, about **8.36 MB** |
 
-**Release status — 2026-10-23:** **[v0.1.2 — Download the complete ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)** includes the local application, **33,937 character images + 221 styles**, comparison tools and both sample workflow JSON files. The online demo shows only 120 samples. GitHub **Code → Download ZIP** contains the demo and documentation; use the Release ZIP for the full collection. Model weights and reference libraries are separate downloads.
+**Release status — 2026-10-24:** **[v0.1.2 — Download the complete ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)** includes the local application, **33,937 character images + 221 styles**, comparison tools and both sample workflow JSON files. The online demo shows only 120 samples. GitHub **Code → Download ZIP** contains the demo and documentation; use the Release ZIP for the full collection. Model weights and reference libraries are separate downloads.
 
 **The collection has not been selected by pass/fail judgments.** Incorrect character identities, mismatched prompts and weak style results remain included. Neither inclusion nor resemblance proves training-set coverage or accurate reproduction. The demo is an interface sample, not a list of approved results.
 

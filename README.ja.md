@@ -6,6 +6,8 @@
 
 **34,158枚・約2.05 GB／1.91 GiB** · [リリース情報](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256チェックサム](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
 
+**v0.1.2配布ZIP更新（2026-10-24）：** カタログの太字タイトルから、このリポジトリを新しいタブで開けるようになりました。ZIP内の日本語・英語READMEも更新しています。34,158枚の画像と生成設定は同じです。ダウンロードファイル名は従来どおりで、照合にはReleaseの更新済み `SHA256SUMS.txt` を使ってください。[更新内容](docs/updates/catalog-title-link.md)。
+
 > [!NOTE]
 > **ライブデモは、カタログ全体の一部だけを抜粋したプレビューです。**
 >
@@ -28,7 +30,7 @@
 | 配布ZIP・標準DEFLATE | **約2.05 GB／1.91 GiB** |
 | オンラインデモ | **キャラクター96枚＋スタイル24枚**、約**8.36 MB** |
 
-**公開状況（2026-10-23）：** **[v0.1.2・全件版ZIPをダウンロード](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)**できます。ローカルアプリ、**キャラクター33,937枚＋スタイル221枚**、比較判定ツール、サンプルワークフローJSON 2件を同梱しています。オンラインデモは抜粋120枚です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書のため、全件版にはReleaseのZIPを使ってください。モデルや参照画像ライブラリーは別途用意してください。
+**公開状況（2026-10-24）：** **[v0.1.2・全件版ZIPをダウンロード](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)**できます。ローカルアプリ、**キャラクター33,937枚＋スタイル221枚**、比較判定ツール、サンプルワークフローJSON 2件を同梱しています。オンラインデモは抜粋120枚です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書のため、全件版にはReleaseのZIPを使ってください。モデルや参照画像ライブラリーは別途用意してください。
 
 **画像の合格・不合格による選別はしていません。** キャラクターが違うもの、プロンプトと合わないもの、画風の効きが弱いものも含みます。収録や見た目の類似は、正確な再現や学習データへの収録を証明しません。デモの抜粋も「合格した画像の一覧」ではありません。
 
