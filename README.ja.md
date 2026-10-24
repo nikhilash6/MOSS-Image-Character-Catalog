@@ -224,3 +224,8 @@ MOSS-Image対応のComfyUIを使ってください。サンプルと配置先の
 UIは[Krea2 Character Catalog](https://github.com/ukr8b3g-cmyk/Krea2-Character-Catalog)を基に、AnimaDexに近い操作感を目指しています。OpenMOSS・Krea2・AnimaDexの公式製品ではありません。
 
 管理者作成の説明書と公開デモのコードは[MIT License](LICENSE)の対象です。生成サンプル画像、第三者のキャラクター・モデル等の権利は[NOTICE.md](NOTICE.md)で区別しています。モデル本体、参照画像ライブラリー、認証情報、個人の判定状態は公開しません。誤りの報告には画像・スタイル名とカタログのバージョンを添えてください。
+
+
+## 2026-10-24 検索・フィルター位置の修正
+
+v0.1.2の更新ZIPとデモで、画面移動時の検索引継ぎとフィルター位置復元を修正しました。画像・カタログデータは同じで、旧ZIP／チェックサムも保持します。[変更内容と検証](docs/updates/catalog-ui-state-fixes.md)を参照し、現行Releaseのチェックサムで照合してください。

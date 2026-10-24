@@ -1,0 +1,47 @@
+name: Refresh v0.1.2 UI state fixes
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/refresh-v012-ui-state.yml']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: refresh-v012-ui-state
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: contains(github.event.head_commit.message, '[publish-ui-state-v012]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check existing packaging tools
+        run: |
+          python3 --version
+          7z i
+          gh --version
+      - name: Validate frontend and regression tests
+        run: |
+          python3 tools/validate_demo.py
+          node --check demo/review.js
+          node tools/check_sort_order.cjs
+          node tools/check_ui_state.cjs
+      - name: Build with 7-Zip, verify and promote while retaining old assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/refresh_v012_ui_state.py --publish --output "$RUNNER_TEMP/ui-state-release"
+      - name: Preserve package verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v0.1.2-ui-state-verification
+          path: |
+            ${{ runner.temp }}/ui-state-release/verification.json
+            ${{ runner.temp }}/ui-state-release/publication.json
+          if-no-files-found: ignore

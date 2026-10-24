@@ -224,3 +224,8 @@ This is the initial recorded setup; later runs can differ. CUDA 13.0 denotes the
 The UI is adapted from [Krea2 Character Catalog](https://github.com/ukr8b3g-cmyk/Krea2-Character-Catalog) and aims for familiar AnimaDex-like browsing. This is an independent project, not an official OpenMOSS, Krea2 or AnimaDex product.
 
 Maintainer-authored documentation and the published demo code are covered by [MIT](LICENSE). Generated sample images and third-party character/model rights are addressed separately in [NOTICE.md](NOTICE.md). Model weights, reference libraries, credentials and private review state are not published. Report an issue with the image/style name and catalog version; accuracy corrections are welcome.
+
+
+## 2026-10-24 UI state refresh
+
+The refreshed v0.1.2 ZIP and demo fix search carry-over during view navigation and restore filter scroll after reload. Images and catalog data are unchanged. Previous ZIP/checksum assets are retained. See [details and validation](docs/updates/catalog-ui-state-fixes.md); use the current Release checksum.
