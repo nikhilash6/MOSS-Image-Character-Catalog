@@ -10,6 +10,8 @@
 
 **v0.1.2 package refresh — 2026-10-24:** The catalog title now opens this repository in a new tab. The ZIP also includes updated English and Japanese READMEs. The 34,158 images and rendering settings are unchanged. The download filename stays the same; use the updated `SHA256SUMS.txt` on the Release page to verify this refreshed package. [Update details](docs/updates/catalog-title-link.md).
 
+**New — 2026-10-25: eight style categories.** All 221 styles are assigned once. Open **Styles → Category** in the left filter panel; combine categories with search and switch English/Japanese. Thanks to Brie-Wensleydale for [Issue #2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/issues/2). The refreshed v0.1.2 ZIP includes the feature; verify it with the current Release checksum. [Categories and counts](docs/STYLE_CATEGORIES.md) · [221-entry CSV](docs/style-categories.csv).
+
 > [!NOTE]
 > **The live demo is a preview showing only a small part of the collection.**
 >

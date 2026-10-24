@@ -56,8 +56,16 @@ def validate():
     assert 'new URL(\'catalog.json\',location.href)' in js
     assert "if(demoMode)throw new Error(t('demoReadOnly'))" in js
     assert 'html[data-catalog-mode="demo"] .actions' in css
-    for candidates in re.findall(r'<script type="application/json"[^>]*>(.*?)</script>',html,re.S):
-        assert json.loads(candidates) == [], 'Full source candidate list leaked'
+    category_index = json.loads((ROOT/'docs/style-categories.json').read_text(encoding='utf-8'))
+    assert len(category_index['categories']) == 8 and len(category_index['assignments']) == 221
+    import csv
+    category_names={r['name']:r['category_id'] for r in csv.DictReader((ROOT/'docs/style-categories.csv').open(encoding='utf-8',newline=''))}
+    demo_category_index={**category_index,'assignments':{r['key']:category_names[r['name']] for r in rows if r['kind']=='style'}}
+    for attrs, candidates in re.findall(r'<script type="application/json"([^>]*)>(.*?)</script>',html,re.S):
+        if 'id="style-category-index"' in attrs:
+            assert json.loads(candidates) == demo_category_index
+        else:
+            assert json.loads(candidates) == [], 'Full source candidate list leaked'
     total = sum(p.stat().st_size for p in SITE.rglob('*') if p.is_file())
     assert total < 20_000_000, 'Unexpected demo growth; review publication scope'
     for name in ['README.md','README.ja.md']:

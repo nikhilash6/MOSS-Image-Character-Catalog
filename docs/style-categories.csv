@@ -1,0 +1,222 @@
+catalog_key,name,category_id,category_en,category_ja
+user/c3bead11ff0f5a71aff50391744dc0d4,Anime Style,anime,Anime & Manga,アニメ・マンガ
+user/cd2b3e953bc0541a85bda1f0e431430e,Ghibli Style,anime,Anime & Manga,アニメ・マンガ
+user/4eff8b62c1b05cd8aa123a85145f91a9,70s Anime,anime,Anime & Manga,アニメ・マンガ
+user/fa856f792625531d84eadf3ffaaa311d,Manga Style,anime,Anime & Manga,アニメ・マンガ
+user/ebf223d00bd153ad92f8f085209c212c,League of Legends Style,anime,Anime & Manga,アニメ・マンガ
+user/cc71b2cdc7b8563eb0a1395c5249a571,Ghost in the Shell Style,anime,Anime & Manga,アニメ・マンガ
+user/05e30608f5e05960b5c8e1265891e8ac,Shojo Style,anime,Anime & Manga,アニメ・マンガ
+user/7c94ff5fb82d53cf9a649ab733af16f6,Dark Fantasy Anime Style,anime,Anime & Manga,アニメ・マンガ
+user/6f46c93a66435a91abc6028bef4991a7,90s Anime Style,anime,Anime & Manga,アニメ・マンガ
+user/db9d2a9f0fe952348ab2aa8c5a245908,2000s Anime Style,anime,Anime & Manga,アニメ・マンガ
+user/d2e248bfaf505d9d8d42c9741cd75567,Anime in Photo,anime,Anime & Manga,アニメ・マンガ
+user/49376ce538315ad3b1940cc8a073f0f4,NovelAI-inspired Anime Illustration,anime,Anime & Manga,アニメ・マンガ
+user/e0bba0c8e6595bfb9d707e545353e823,Animagine-inspired Anime Illustration,anime,Anime & Manga,アニメ・マンガ
+user/8d7f7d0d060c5b47938230be4b6638f5,Niji-inspired Anime Illustration,anime,Anime & Manga,アニメ・マンガ
+user/68b137b6f97a58d59c47bf26786278e7,Yoshitaka Amano Style,anime,Anime & Manga,アニメ・マンガ
+user/9bc8926c99705d6caa1e58957e7ebcce,Gravity Falls Style,western,Western Animation & Comics,海外アニメ・コミック
+user/b2f31723aa115d3f9f65db0d5bba176c,Spider-Verse Style,western,Western Animation & Comics,海外アニメ・コミック
+user/e20228d78dff589c9ef6137e01512f18,Hellboy Style,western,Western Animation & Comics,海外アニメ・コミック
+user/c89a4e6bf2dd54b4abee90115a84782d,Pixar Animation,western,Western Animation & Comics,海外アニメ・コミック
+user/2beaa86d78625c649e836465595f3b94,South Park Style,western,Western Animation & Comics,海外アニメ・コミック
+user/2102c586b18f58fa9f98ee4f0c95f409,Adventure Time Style,western,Western Animation & Comics,海外アニメ・コミック
+user/46c91c55fe2951e7be84ffebc6e5ed9f,The Simpsons Style,western,Western Animation & Comics,海外アニメ・コミック
+user/4818291c6dbf5f11a0d629031e9e5db4,SpongeBob Style,western,Western Animation & Comics,海外アニメ・コミック
+user/8b64219e3c815fb89b6f9f24882df65d,Rick and Morty Style,western,Western Animation & Comics,海外アニメ・コミック
+user/d0cfbcc173325f708dfb3bf9111b6f36,Futurama Style,western,Western Animation & Comics,海外アニメ・コミック
+user/897e4f649fc256c482c08ec3467e2cfa,Steven Universe Style,western,Western Animation & Comics,海外アニメ・コミック
+user/59a2cb0a8e3a53959b702ff99d861008,The Owl House Style,western,Western Animation & Comics,海外アニメ・コミック
+user/d0f67fbf2b515cef922359f7183eda21,She-Ra Style,western,Western Animation & Comics,海外アニメ・コミック
+user/0061e105ee255af9917c004fb808f832,Looney Tunes Style,western,Western Animation & Comics,海外アニメ・コミック
+user/7145d2d85d285d6b861ebb5111d5a20c,Tom and Jerry Classic 2D Style,western,Western Animation & Comics,海外アニメ・コミック
+user/ff65b9a9c3195ff68b596b2777d158c0,Disney Renaissance 2D Style,western,Western Animation & Comics,海外アニメ・コミック
+user/d874cbbb5a535f0e81a389dab52f3f98,Family Guy Style,western,Western Animation & Comics,海外アニメ・コミック
+user/2344e2b4b2c054c9922c236d9fccf9c7,The Powerpuff Girls Style,western,Western Animation & Comics,海外アニメ・コミック
+user/98308ab8b293501eb305160372463db7,Dexter's Laboratory Style,western,Western Animation & Comics,海外アニメ・コミック
+user/78b5852bebc050948daeccc02935a974,Samurai Jack Style,western,Western Animation & Comics,海外アニメ・コミック
+user/c27b95eff51c591fa873eb2da8cd9518,Kim Possible Style,western,Western Animation & Comics,海外アニメ・コミック
+user/35c2360e23935372a1e856b94c70b927,Phineas and Ferb Style,western,Western Animation & Comics,海外アニメ・コミック
+user/cce6b74ce58e5ae3ac09a93419badad2,Peanuts Classic 2D Style,western,Western Animation & Comics,海外アニメ・コミック
+user/e24b753ab3925e188db8899704fe6f00,Garfield Classic 2D Style,western,Western Animation & Comics,海外アニメ・コミック
+user/15924dd1787b5992aba820a7fea2764f,Scooby-Doo Classic Style,western,Western Animation & Comics,海外アニメ・コミック
+user/a00a38d8e7b9553a81dd58a637f642b9,Batman The Animated Series Style,western,Western Animation & Comics,海外アニメ・コミック
+user/b7486c01b333563486ccbb4d5feff624,Cuphead Style,western,Western Animation & Comics,海外アニメ・コミック
+user/da38c65b7dfd54bf835e2f7324d1fa83,Sesame Street-style Soft Puppet,western,Western Animation & Comics,海外アニメ・コミック
+user/55a49f448199556d8472d1ffa4e87560,Herge Ligne Claire Style,western,Western Animation & Comics,海外アニメ・コミック
+user/4d906ba7fa9553908743e865e1b4f44a,Moebius Style,western,Western Animation & Comics,海外アニメ・コミック
+user/57b8f38301cc54548a3ece5c32b152d0,Watercolor Painting (MOSS caption test),drawing,Drawing & Print Media,描画・版画・画材
+user/29acd1fe573e5f7b94c4299adc51a009,Charcoal Rendering,drawing,Drawing & Print Media,描画・版画・画材
+user/c5cf30f532eb549db8f0c2e267a5d15e,Flat Illustration,drawing,Drawing & Print Media,描画・版画・画材
+user/1e786e6d6208522a86cfcfda0265d6c6,Line Art,drawing,Drawing & Print Media,描画・版画・画材
+user/5b5b167f1ec95dbab423894d0cb600eb,Colored Pencil Drawing,drawing,Drawing & Print Media,描画・版画・画材
+user/65f3f082adb953aea6c9038eb7e535ec,Soft Pastel Drawing,drawing,Drawing & Print Media,描画・版画・画材
+user/b876024639e355e1951f9531d66f7967,Gouache Painting,drawing,Drawing & Print Media,描画・版画・画材
+user/b1c4fb386c5c59d98e7e01f61963d216,Etching,drawing,Drawing & Print Media,描画・版画・画材
+user/070babb06b625c219f571ab7df7c6d32,Mixed-media Collage,drawing,Drawing & Print Media,描画・版画・画材
+user/0da60029198e5eaca9999a311beae0fd,8-Bit Pixel Art,digital,3D / Digital / Photography,3D・デジタル・写真
+user/d55af43632595e69a1c5d44ba9be93f0,Low-Poly 3D,digital,3D / Digital / Photography,3D・デジタル・写真
+user/1f1d3b9c491d59b7b442f88c39a6908f,Fortnite Style,digital,3D / Digital / Photography,3D・デジタル・写真
+user/9983c88e32245ab8823e3a452a287a7f,Studio Photography,digital,3D / Digital / Photography,3D・デジタル・写真
+user/5712f8135d2a5cf1a254e1f09e8e046a,Unreal Engine Style,digital,3D / Digital / Photography,3D・デジタル・写真
+user/6dc36900a6dd5693a401d60069dc7c47,Resident Evil Style,digital,3D / Digital / Photography,3D・デジタル・写真
+user/f66c341fa6d95a8390010d60e1b994df,Photorealistic Character Adaptation,digital,3D / Digital / Photography,3D・デジタル・写真
+user/4f09b80f421151529d32b09f3fdd692b,Voxel Art,digital,3D / Digital / Photography,3D・デジタル・写真
+user/d3892094841251099bbabbc1f9637c77,Paper Cutout,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/64d63b989a665c11a7458eb76d432372,Claymation,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/9e1d6dfbd8a05f218a217eae1dd953c6,Action Figure,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/7349178e368757b6afd49fbdec550dea,Nendoroid-style Figure,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/a6de3f3dff855c10b07307e1a233482a,Mosaic Art,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/c0e160249f13552993aa425e573a4ccc,Origami Art,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/3d0e930011cf5514b0e1438baf8c7ea0,Needle-Felted Art,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/028484e9346b54bfa130a83dec0e70d9,Embroidery Art,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/b6f616f573b758cea27adcd423e2262a,Knitted Art,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/1a517416a1a9561ba2fb2e1e76525365,Stained Glass Art,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/b496cf7d05895815ad660011e89298ed,Paper Quilling,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/84e0d452ff445e8996d505422d2f8711,Papier-mache,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/84f782875bfe5135901c2cabefeb018f,Bwa-inspired Carved Figure,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/dbf4c20184ee5f68906c9a18779bb8be,Ancient Greek Marble Sculpture,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/0936324518f359298d763309bf3af8ed,Wire Sculpture,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/79a32a90f99955bda30af088092fcec0,Blown Glass Figure,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/6a4fa38e52485ca8bc17a36fddd8afc2,Glazed Porcelain Figurine,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/b77ee24763925631b22039f69e2e47b5,Bronze Sculpture,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/8f818bd641db532b8143e6ee9fd81b40,Bas-Relief Sculpture,craft,Craft / Sculpture / Folk,工芸・彫刻・民芸
+user/25d585ce39a55f32bca4a02331564dab,Ukiyo-e Style,traditional,World Traditional Art,世界の伝統美術
+user/c5d475a481b651b494abd189223bfcf7,Sumi-e Ink Painting,traditional,World Traditional Art,世界の伝統美術
+user/eee0f9418777504aad4fe3b489fa06cc,Ancient Egyptian Wall Painting,traditional,World Traditional Art,世界の伝統美術
+user/3eb6d1bc3b2a52f7acedcae35bdd8ff7,Pompeian Fresco,traditional,World Traditional Art,世界の伝統美術
+user/f13df5cdbdd8505dbcbf7e5c56563113,Byzantine Icon Painting,traditional,World Traditional Art,世界の伝統美術
+user/0eed10dbcfc554c8896a2ee25738f376,Medieval Illuminated Manuscript,traditional,World Traditional Art,世界の伝統美術
+user/63df7fbe938554f19eef7f4add3a1b3e,Persian Miniature Painting,traditional,World Traditional Art,世界の伝統美術
+user/1987f918dc6f53f4a0e3c99d52886be7,Ottoman Miniature Painting,traditional,World Traditional Art,世界の伝統美術
+user/4497f1779a3c5d3191fd698814c5cd09,Mughal Miniature Painting,traditional,World Traditional Art,世界の伝統美術
+user/7b85da85f8b45283b082ba89a68513b9,Rajput Miniature Painting,traditional,World Traditional Art,世界の伝統美術
+user/efd8dbc7ed63579b9b784ccb56de5e61,Kerala Mural Painting,traditional,World Traditional Art,世界の伝統美術
+user/2f5b271568fd596ab2644bcf7fab4143,Tanjore Painting,traditional,World Traditional Art,世界の伝統美術
+user/d924d3907fe85357945871c53b48c5ef,Ajanta Cave Painting,traditional,World Traditional Art,世界の伝統美術
+user/9c09b418a550501a9612ab4d718e66eb,Chinese Gongbi Painting,traditional,World Traditional Art,世界の伝統美術
+user/27150446720e5760a586ff98ffe5c45b,Dunhuang Mural Painting,traditional,World Traditional Art,世界の伝統美術
+user/7b6276ae78c55b389ced85e4e511e871,Tibetan Thangka Painting,traditional,World Traditional Art,世界の伝統美術
+user/8051d8da5d6551c48ad37b4ff9c52205,Korean Minhwa Painting,traditional,World Traditional Art,世界の伝統美術
+user/1d5595281acd504ea4c0bc011fed32a5,Japanese Rinpa Painting,traditional,World Traditional Art,世界の伝統美術
+user/092c383857db5c7dbba7a32407b80a30,Wayang Kulit Shadow Theatre,traditional,World Traditional Art,世界の伝統美術
+user/11c17d506f3053dda38fd75962297499,Chinese Shadow Puppetry,traditional,World Traditional Art,世界の伝統美術
+user/563ec6d89c7150bcb005e7666027b7c0,Tingatinga Painting,traditional,World Traditional Art,世界の伝統美術
+user/4ab4e5a988d3568986e9489fdce5854f,Ethiopian Icon Painting,traditional,World Traditional Art,世界の伝統美術
+user/ca43fec25ac75969b52427ec20b6d4b6,Yumeji Takehisa Style,traditional,World Traditional Art,世界の伝統美術
+user/71377c2eb6ae506b8ac2e3ac64591154,Kitagawa Utamaro Style,traditional,World Traditional Art,世界の伝統美術
+user/4549b2a3fb6d5cad8bd3d227f48315f8,Toshusai Sharaku Style,traditional,World Traditional Art,世界の伝統美術
+user/44ca35ff756c5e2ab3c4ef9c9f06054f,Utagawa Hiroshige Style,traditional,World Traditional Art,世界の伝統美術
+user/dc078103a8e5550486043ad7a85db760,Indonesian Batik Painting,traditional,World Traditional Art,世界の伝統美術
+user/ee47d1c4bf325c5f8fd912e86c2d9686,Warli Painting,traditional,World Traditional Art,世界の伝統美術
+user/165f7c8016b9516581bb4baf35850aa3,Madhubani Painting,traditional,World Traditional Art,世界の伝統美術
+user/2865f41f696d5271bedc49067e5deba6,Pattachitra Painting,traditional,World Traditional Art,世界の伝統美術
+user/9e414b54a69e51c7b90b3e1d669ca522,Wixarika Yarn Painting,traditional,World Traditional Art,世界の伝統美術
+user/f44ad408adc0512ba4ec1e072881fe6b,Lowbrow Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/9eff64e25a815fdbad28649c9aa52c22,Surrealism Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/972624f94b5c5ceb8a882bd34a873501,Pop Art Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/80a1e295becb5132a2d2cea7bb25d65a,Andy Warhol Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/575c7a903f2d59ba84dafb892a5c83f8,Roy Lichtenstein Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/2bb2d7bbaf7b5f7baa141abde4162b2f,Jean-Michel Basquiat Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/eff1236588e65de2b419e2aa5d48fbce,Keith Haring Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/c136d4288b985c428195c4516a7e8123,Diego Rivera Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/1bf612a2b5905788a3db5e178488634a,Yoshitomo Nara Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/9e67b0947b4354e7b510c6bd0849adfe,Takashi Murakami Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/ad44f83f811757179699e684814eba9d,KAWS Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/685c68c87ed65be3a7c692c9cf3d9417,Banksy Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/cf1f900010fd556098864a8fc7490014,David Hockney Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/a197aa0fe0695613ba4b256addd3f961,Fernando Botero Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/8a4b0624b995560f9ad0aa8a5cf6cdf3,Alex Katz Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/a541b395f5f95d73b7cb6992c015c35b,Francis Bacon Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/e1c398ef1b4859acafa999269c511b68,Yayoi Kusama Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/825478b5a16e5e1abbabe2b29a23e788,Taro Okamoto Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/6fe9c1def0375de4bbace079eeed9001,Tadanori Yokoo Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/290c99705079536ba5982396d2e51524,Akira Yamaguchi Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/fba30279073f559eb13eabf7440df8fc,Chiho Aoshima Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/a0951c276d295a16b13b6ec021b9b616,Tomoo Gokita Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/8d0ae2d0d4a5555894849f799e303877,Izumi Kato Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/cc35f7c19f2b5dc3828d95c527eb6b34,Ayako Rokkaku Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/f2a850caf9da5ec1b8ad85ac03092a1c,Mr. Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/2b5d2cb6719355da993ab1532ba2d7c7,Hisashi Tenmyouya Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/daad1b9d5b8a5813bafc98e404d15ab1,Keiichi Tanaami Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/b9dc546ff08d5c7e888f5015a549d69f,George Condo Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/e0ae6189c1465a578d1022a37f482950,Julian Opie Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/95d11634029650d8b4fe520bcbe22cf1,Mark Ryden Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/d0e2fdd6c3b95c17b5f91475f645410d,Ron English Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/8a173592cc47584ca02803de83e26b5e,Peter Doig Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/53110b376e4757878bb6eabf324de817,Amy Sherald Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/1e5e76b936eb510b915ad99a1d1af36e,Kehinde Wiley Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/9d183bc9af61521db03615845ce10e24,Marlene Dumas Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/1d2d32d9c1995cc8b4c14af7032adb89,Yue Minjun Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/72db5fc51a0e547fbce5a981ceafae44,Fang Lijun Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/1bda588f78035a3eb2c6ba5265020229,Jenny Saville Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/7873fbd9121450d08db7dc51d115e296,Nicole Eisenman Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/42a7890c1f195885b88463c2da9dfb8c,Peter Saul Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/f50d4ad9e20f5542a7f93c0aa692f910,Cecily Brown Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/3c4accd6ba6455528ecd787ebd5cc22f,Henry Darger Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/1a5ed5d52b3150b09e0c3cf98bc23629,Adolf Wolfli Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/e8e981660cef5e779befca2606fa8082,Aloise Corbaz Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/99b9497ec2f35afb9c8492f97c560a80,Augustin Lesage Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/69b2879b32e755c7be4eaf3bfbc48644,Madge Gill Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/a8342bc3fa8d56f1af825a0eeb6d6b21,Martin Ramirez Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/03c024037181584a95346b7d9b48e96e,Bill Traylor Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/54d1d81b33915a15b84cc6dcac1b801c,Niko Pirosmani Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/b2737e6a73e850899a938751bfc3af9b,Kiyoshi Yamashita Style,contemporary,Contemporary / Pop / Street / Surreal,現代・ポップ・ストリート・幻想美術
+user/a7ec8c229cbe59b0a41de57048526c4b,Post-Impressionism Style,painting,Classical & Modern Painting,古典・近代絵画
+user/662eed36c2f553ec8354dc261172dbf6,Rembrandt (MOSS caption test),painting,Classical & Modern Painting,古典・近代絵画
+user/59fba6c97b4e527b89102634a177a1c0,Claude Monet Style,painting,Classical & Modern Painting,古典・近代絵画
+user/35adb859d98c51d2b033bc32001ab2dd,Vincent van Gogh Style,painting,Classical & Modern Painting,古典・近代絵画
+user/9d4263aa268e57169a50ecfe5875d114,Gustav Klimt Style,painting,Classical & Modern Painting,古典・近代絵画
+user/5496a65e956a5f4b9524c224604e2708,Alphonse Mucha Style,painting,Classical & Modern Painting,古典・近代絵画
+user/755b6e363c45558cba68531c8ab41c98,Georges Seurat Style,painting,Classical & Modern Painting,古典・近代絵画
+user/6edb88faecc750649f8f4961cb2f277d,Leonardo da Vinci Style,painting,Classical & Modern Painting,古典・近代絵画
+user/b9341462b18d5516a52c472307bac339,Johannes Vermeer Style,painting,Classical & Modern Painting,古典・近代絵画
+user/9ce9282758025b23b75c2e7d01da8956,Pierre-Auguste Renoir Style,painting,Classical & Modern Painting,古典・近代絵画
+user/6cd8684ac3b653229d421b900cfa3429,Edgar Degas Style,painting,Classical & Modern Painting,古典・近代絵画
+user/7a10641a94355475bb500dab8b3918fb,Henri Matisse Style,painting,Classical & Modern Painting,古典・近代絵画
+user/d45d133c670a5fca9e26806556c0e8c9,Edvard Munch Style,painting,Classical & Modern Painting,古典・近代絵画
+user/3e32f79e8f175b8b9e1f7adfef66dbc9,Salvador Dali Style,painting,Classical & Modern Painting,古典・近代絵画
+user/55689b54320b597a8e1197c84cbb9c11,Rene Magritte Style,painting,Classical & Modern Painting,古典・近代絵画
+user/6e06057b0fdb555c9170499818d895ed,Lucas Cranach the Elder Style,painting,Classical & Modern Painting,古典・近代絵画
+user/e41a5f2df6a15210872725640e58fcfe,Sandro Botticelli Style,painting,Classical & Modern Painting,古典・近代絵画
+user/c9bf88b0d4935e3b9dde6a25c44e612c,Giuseppe Arcimboldo Style,painting,Classical & Modern Painting,古典・近代絵画
+user/882511194c60542f87216a4f4eaa1604,Albrecht Durer Style,painting,Classical & Modern Painting,古典・近代絵画
+user/ef96bcb8d95e56499935d60986ea1a9c,Jan van Eyck Style,painting,Classical & Modern Painting,古典・近代絵画
+user/5b2e8fbc5054566a9b185b0ebcd39a5e,Hieronymus Bosch Style,painting,Classical & Modern Painting,古典・近代絵画
+user/841cc169bff05b68b51ea4e899b83cb0,Pieter Bruegel the Elder Style,painting,Classical & Modern Painting,古典・近代絵画
+user/e0a536b7240e50cab1e50f8957e0a516,Caravaggio Style,painting,Classical & Modern Painting,古典・近代絵画
+user/ac88c88712f3506ca29c78b140e31469,El Greco Style,painting,Classical & Modern Painting,古典・近代絵画
+user/7db161b0be825d14b2963686551d758c,Giotto Style,painting,Classical & Modern Painting,古典・近代絵画
+user/aaa2b3d1c567519d8199aa0bfb612cdd,Amedeo Modigliani Style,painting,Classical & Modern Painting,古典・近代絵画
+user/cd5a3ba904435340bd3fa659b0ea2090,Giorgio de Chirico Style,painting,Classical & Modern Painting,古典・近代絵画
+user/66841718cf47524fac5e7f90e03ec0c7,Marc Chagall Style,painting,Classical & Modern Painting,古典・近代絵画
+user/137da35cab16564988c68290bec34b2b,Paul Signac Style,painting,Classical & Modern Painting,古典・近代絵画
+user/5b8acf1902e459cd947d01b3bf556523,Aubrey Beardsley Style,painting,Classical & Modern Painting,古典・近代絵画
+user/208b71edbb0256fc9725132ab9a0f93e,Ryusei Kishida Style,painting,Classical & Modern Painting,古典・近代絵画
+user/6e10a37e565850a9a2f67254cf2be4b4,Alfred Sisley Style,painting,Classical & Modern Painting,古典・近代絵画
+user/40c41131d04d519f832e2c8d1b989b7b,Camille Pissarro Style,painting,Classical & Modern Painting,古典・近代絵画
+user/c519f44adda554d1b70e7bffe8cc1d0f,Ferdinand Hodler Style,painting,Classical & Modern Painting,古典・近代絵画
+user/57b64b9ac77c58b189e536cc7b98bcd1,Mary Cassatt Style,painting,Classical & Modern Painting,古典・近代絵画
+user/d0510dc1dadc5423a2b805ef71168c4a,Giovanni Segantini Style,painting,Classical & Modern Painting,古典・近代絵画
+user/b70c475563e950bebc47eec42d3da031,Diego Velazquez Style,painting,Classical & Modern Painting,古典・近代絵画
+user/2a4247c742375cfe9aa6b5dbdae0f7a6,Raphael Style,painting,Classical & Modern Painting,古典・近代絵画
+user/31e1600b0afe5c61975b8621294c3d5b,John William Waterhouse Style,painting,Classical & Modern Painting,古典・近代絵画
+user/862de732fdcb51de8b15f4be4515ef89,Henri Rousseau Style,painting,Classical & Modern Painting,古典・近代絵画
+user/f77c7142dcb852758aab05355be6bd95,Wassily Kandinsky Style,painting,Classical & Modern Painting,古典・近代絵画
+user/4a1a5e94ea93585eb7bfd78bf7a07270,Richard Dadd Style,painting,Classical & Modern Painting,古典・近代絵画
+user/f251f092962659ae94f1e105135659db,Artemisia Gentileschi Style,painting,Classical & Modern Painting,古典・近代絵画
+user/d0ab07e19d4c5b3a9fa9c096947890f3,Herbert James Draper Style,painting,Classical & Modern Painting,古典・近代絵画
+user/5139ad72764a516dbc82c43791a7280b,Jean-Francois Millet Style,painting,Classical & Modern Painting,古典・近代絵画
+user/b28601bcf16e5dedbd68073233ea4839,John Everett Millais Style,painting,Classical & Modern Painting,古典・近代絵画
+user/22de2181d42e508e85daeb3a1b449f99,Paul Gauguin Style,painting,Classical & Modern Painting,古典・近代絵画
+user/9a32319de97558cc812012c2e042edab,Gustave Courbet Style,painting,Classical & Modern Painting,古典・近代絵画
+user/7d012f8585de5f0788aedd733b4e71fb,Jean-Auguste-Dominique Ingres Style,painting,Classical & Modern Painting,古典・近代絵画
+user/14b0136c5e7f50ccb36a0da4ac2b75e7,Peter Paul Rubens Style,painting,Classical & Modern Painting,古典・近代絵画
+user/970e2039855352cc95e2ddda0764200c,Eugene Delacroix Style,painting,Classical & Modern Painting,古典・近代絵画
+user/18a725f3ed9c50a9828cd62fdc47479e,Eugene Boudin Style,painting,Classical & Modern Painting,古典・近代絵画
+user/bef5c20998a355cfa328170a87b613d1,Richard Gerstl Style,painting,Classical & Modern Painting,古典・近代絵画
+user/f0ce320208c0579794cb9ac61f859267,Parmigianino Style,painting,Classical & Modern Painting,古典・近代絵画
+user/1c5f4ca274f25cafb4c39059d9a71657,Jacopo Pontormo Style,painting,Classical & Modern Painting,古典・近代絵画
+user/a94bceace00d5bcfa9b5ebcac08adc81,Agnolo Bronzino Style,painting,Classical & Modern Painting,古典・近代絵画
+user/57e21d43883a58d5a213598d2ae9c10c,Francois Boucher Style,painting,Classical & Modern Painting,古典・近代絵画
+user/92f161b149df5ecab6d6789ce3105a12,Jean-Honore Fragonard Style,painting,Classical & Modern Painting,古典・近代絵画
+user/2faf0c7266a05e96846e530f6db423a7,Simone Martini Style,painting,Classical & Modern Painting,古典・近代絵画
