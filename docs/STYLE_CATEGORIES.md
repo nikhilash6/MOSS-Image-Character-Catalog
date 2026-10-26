@@ -1,10 +1,10 @@
 # Eight style categories — Issue #2
 
-## Local extension — 2026-10-27
+## Release extension — 2026-10-27
 
-The assignment lists now cover **314 local styles**, including the newly completed 93. Each style has exactly one category. The original 221 assignments are unchanged. The current Release ZIP still contains 221 styles and the live demo still contains 24 style samples; this metadata update does not add images to either.
+The assignment lists now cover **314 styles**, including the newly completed 93. Each style has exactly one category. The original 221 assignments are unchanged. The refreshed v0.1.2 Release ZIP includes all 314 styles. The live demo remains a 24-style sample.
 
-| Category | Current local styles |
+| Category | Current styles |
 |---|---:|
 | Anime & Manga | 32 |
 | Western Animation & Comics | 44 |

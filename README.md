@@ -6,20 +6,20 @@
 
 ### [↓ Download the complete catalog ZIP — v0.1.2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)
 
-**34,158 images · about 2.05 GB / 1.91 GiB** · [Release notes](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256 checksums](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
+**34,251 images · about 2.07 GB / 1.92 GiB** · [Release notes](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256 checksums](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
 
 **v0.1.2 package refresh — 2026-10-24:** The catalog title now opens this repository in a new tab. The ZIP also includes updated English and Japanese READMEs. The 34,158 images and rendering settings are unchanged. The download filename stays the same; use the updated `SHA256SUMS.txt` on the Release page to verify this refreshed package. [Update details](docs/updates/catalog-title-link.md).
 
-**New — 2026-10-25: eight style categories.** All 221 styles are assigned once. Open **Styles → Category** in the left filter panel; combine categories with search and switch English/Japanese. Thanks to Brie-Wensleydale for [Issue #2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/issues/2). The refreshed v0.1.2 ZIP includes the feature; verify it with the current Release checksum. [Categories and counts](docs/STYLE_CATEGORIES.md) · [314-entry CSV: released 221 + local 93](docs/style-categories.csv).
+**New — 2026-10-25: eight style categories.** All 221 styles are assigned once. Open **Styles → Category** in the left filter panel; combine categories with search and switch English/Japanese. Thanks to Brie-Wensleydale for [Issue #2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/issues/2). The refreshed v0.1.2 ZIP includes the feature; verify it with the current Release checksum. [Categories and counts](docs/STYLE_CATEGORIES.md) · [314-entry CSV](docs/style-categories.csv).
 
-**Local generation update (2026-10-27):** An additional **93 styles** are complete and verified locally: **33,937 characters + 314 styles = 34,251 images**, classified without duplicate assignments into eight categories. These additions are **not yet included in the downloadable v0.1.2 ZIP or the 120-image live demo**. The download counts and size below still describe the published ZIP. [Rendering settings and verification](docs/updates/style93-generation.md) · [314-style category list](docs/style-categories.csv).
+**Release ZIP refresh (2026-10-27):** Added **93 styles**: **33,937 characters + 314 styles = 34,251 images**. All 314 styles have exactly one of eight categories. The ZIP was selectively updated with 7-Zip; the previous ZIP/checksum are retained as before-style93. Images remain uncurated. The live demo still shows 120 samples. [Rendering settings and verification](docs/updates/style93-generation.md) · [314-style category list](docs/style-categories.csv).
 
 > [!NOTE]
 > **The live demo is a preview showing only a small part of the collection.**
 >
 > **Demo: 120 images** — 96 characters + 24 styles. Try browsing, searching and copying prompts.
 >
-> **Full collection: 34,158 images** — 33,937 characters + 221 styles. Download the complete local application and image collection using the ZIP link above.
+> **Full collection: 34,251 images** — 33,937 characters + 314 styles. Download the complete local application and image collection using the ZIP link above.
 
 # MOSS-Image Character & Style Catalog
 
@@ -28,13 +28,13 @@ A searchable library of **MOSS-Image-generated images and reusable prompts**, bu
 | Complete download | Images / size |
 |---|---:|
 | Characters | **33,937** |
-| Styles | **221** |
-| **Total** | **34,158** |
-| Files before compression | **About 2.75 GB / 2.56 GiB** |
-| Release ZIP, standard DEFLATE | **2.05 GB / 1.91 GiB** |
+| Styles | **314** |
+| **Total** | **34,251** |
+| Files before compression | **About 2.77 GB / 2.58 GiB** |
+| Release ZIP, standard DEFLATE | **2.07 GB / 1.92 GiB** |
 | Online demo | **96 characters + 24 styles**, about **8.36 MB** |
 
-**Release status — 2026-10-24:** **[v0.1.2 — Download the complete ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)** includes the local application, **33,937 character images + 221 styles**, comparison tools and both sample workflow JSON files. The online demo shows only 120 samples. GitHub **Code → Download ZIP** contains the demo and documentation; use the Release ZIP for the full collection. Model weights and reference libraries are separate downloads.
+**Release status — 2026-10-27:** **[v0.1.2 — Download the complete ZIP](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)** includes the local application, **33,937 character images + 314 styles**, comparison tools and both sample workflow JSON files. The online demo shows only 120 samples. GitHub **Code → Download ZIP** contains the demo and documentation; use the Release ZIP for the full collection. Model weights and reference libraries are separate downloads.
 
 **The collection has not been selected by pass/fail judgments.** Incorrect character identities, mismatched prompts and weak style results remain included. Neither inclusion nor resemblance proves training-set coverage or accurate reproduction. The demo is an interface sample, not a list of approved results.
 
@@ -66,12 +66,12 @@ This is a **character-list-based catalog with additional samples**, not an Anima
 | Casual-outfit additions | 2 |
 | Comparison tests | 5 |
 | **Additional character subtotal** | **247** |
-| Picture styles and artist/medium studies | **221** |
-| **Total additions** | **468** |
+| Picture styles and artist/medium studies | **314** |
+| **Total additions** | **561** |
 
-Outfits, forms and tests count as separate images, not unique identities. Krea2 images and verdicts are not imported. The 221 styles include 40 earlier samples and 181 later additions. Their prompts describe visual characteristics in English; painter names, media and animation styles are experiments, not accuracy guarantees.
+Outfits, forms and tests count as separate images, not unique identities. Krea2 images and verdicts are not imported. The 314 styles include 40 earlier samples, 181 subsequent samples and 93 additions generated on 2026-10-26. Their prompts describe visual characteristics in English; painter names, media and animation styles are experiments, not accuracy guarantees.
 
-The complete Release ZIP uses standard DEFLATE compression and is about **2.05 GB / 1.91 GiB**. Its exact byte size and SHA256 are listed on the [release page](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2). Model weights, personal settings, logs, locks and reference libraries are excluded. The online demo's filter counts describe its sample subset, not the full collection.
+The complete Release ZIP uses standard DEFLATE compression and is about **2.07 GB / 1.92 GiB**. Its exact byte size and SHA256 are listed on the [release page](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2). Model weights, personal settings, logs, locks and reference libraries are excluded. The online demo's filter counts describe its sample subset, not the full collection.
 
 ## Download and use the local version
 
@@ -124,7 +124,7 @@ Addresses [Issue #1](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalo
 
 **Checked for this patch:** Windows PowerShell 5.1 / cmd.exe, Miniconda Python **3.13.11** and Pillow **12.2.0**. Sixteen startup cases passed; an isolated copy of the real app served the catalog, editor and JSON APIs and shut down normally. The comparison setup entry point passed `--help`. Py-only and old-default cases used labelled test launchers. The reporter's exact discovery failure, every Python install-manager configuration, full-collection load, all browser interactions and renewed macOS/Linux checks remain unverified. **This is not a confirmed general incompatibility with Python 3.13.** These checks are separate from the previously documented Python 3.13.12 / Pillow 12.3.0 results. [Changes and validation limits](docs/releases/v0.1.2.md).
 
-The same 34,158 images, generation settings, uncurated state and sorting behavior are retained from v0.1.1. Extract the entire ZIP into a new folder; preserve your previous folder if it contains personal images, edits or review data.
+The initial v0.1.2 release retained the 34,158 images from v0.1.1. The 2026-10-27 refresh adds 93 styles while preserving those existing images and the uncurated state. Extract the entire ZIP into a new folder; preserve your previous folder if it contains personal images, edits or review data.
 
 ### What changed in v0.1.1
 
@@ -171,7 +171,7 @@ The character workflow uses **SFT, not Base**. An 8-step acceleration LoRA at **
 
 Character prompts combine the source name, work and appearance tags with one centered subject, full-body framing, generous margins, a light-gray background and soft lighting. Human subjects receive a clothed standing-pose instruction. Source tags, the reusable copy prompt and actual generation prompt are distinct. The MOSS prompt-enhancer skill was not used for these character batches.
 
-All **221 style images** were checked against saved workflows: SFT BF16 diffusion, INT8 encoder, Small Decoder, no LoRA, 25 steps and CFG 2.5. English descriptions specify the style's visual characteristics, then append this common scene:
+All **314 style images** were checked against saved workflows: SFT BF16 diffusion, INT8 encoder, Small Decoder, no LoRA, 25 steps and CFG 2.5. English descriptions specify the style's visual characteristics, then append this common scene:
 
 ```text
 A single adult woman with short dark brown hair, wearing a cream shirt and a navy apron, carefully arranging a small bouquet of yellow and white flowers on a wooden worktable in a bright flower workshop. Three-quarter view from waist up, natural hand gesture, soft window light, simple uncluttered background. One person.

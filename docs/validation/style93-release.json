@@ -1,0 +1,17 @@
+{
+  "base_sha256": "3d8af97075041439e244f620efd9628daf3de8b7bf65afc3fb36e4369de8530f",
+  "sha256": "f6ebb025167ff4f709194ad9b5b8d09e5379978d66b37f638e2481d3c93b1a73",
+  "bytes": 2066675896,
+  "uncompressed_bytes": 2774383498,
+  "entries": 137073,
+  "unchanged_compressed_entries": 136690,
+  "selected_files": 383,
+  "new_styles": 93,
+  "characters": 33937,
+  "styles": 314,
+  "total_images_verified": 34251,
+  "original_protected_files_unchanged": 7,
+  "archive_test": "passed",
+  "existing_records_preserved": 34158,
+  "category_assignments": 314
+}

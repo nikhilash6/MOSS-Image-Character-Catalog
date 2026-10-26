@@ -4,20 +4,20 @@
 
 ### [↓ 全件版ZIPをダウンロード — v0.1.2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)
 
-**34,158枚・約2.05 GB／1.91 GiB** · [リリース情報](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256チェックサム](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
+**34,251枚・約2.07 GB／1.92 GiB** · [リリース情報](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2) · [SHA256チェックサム](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/SHA256SUMS.txt)
 
 **v0.1.2配布ZIP更新（2026-10-24）：** カタログの太字タイトルから、このリポジトリを新しいタブで開けるようになりました。ZIP内の日本語・英語READMEも更新しています。34,158枚の画像と生成設定は同じです。ダウンロードファイル名は従来どおりで、照合にはReleaseの更新済み `SHA256SUMS.txt` を使ってください。[更新内容](docs/updates/catalog-title-link.md)。
 
 **追加機能（2026-10-25）：スタイルの8カテゴリ絞り込み。** 221件を重複なく分類しました。**スタイル → 左側の「Category／分類」**で選択でき、複数選択・検索併用・日英切替に対応します。[Issue #2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/issues/2)で提案いただいたBrie-Wensleydaleさんに感謝します。更新済みv0.1.2 ZIPに同梱し、Releaseのチェックサムも更新しています。[分類と件数](docs/STYLE_CATEGORIES.ja.md) · [全314件CSV](docs/style-categories.csv)。
 
-**ローカル生成の更新（2026-10-27）：** 追加**93スタイル**の生成・登録・画像照合が完了しました。ローカル配布用コピーは**キャラクター33,937枚＋スタイル314枚＝合計34,251枚**で、8カテゴリに重複なく分類しています。**この追加分は、公開中のv0.1.2 ZIPと120枚のライブデモにはまだ含まれません。** 以下の配布枚数・容量は公開中ZIPの値です。[生成設定と検証記録](docs/updates/style93-generation.md) · [314スタイルの分類一覧](docs/style-categories.csv)。
+**配布ZIP更新（2026-10-27）：** **93スタイル**を追加し、**キャラクター33,937枚＋スタイル314枚＝合計34,251枚**になりました。全314スタイルを8カテゴリに重複なく分類しています。7-Zipで必要なファイルのみ更新し、旧ZIP・チェックサムはbefore-style93名で保持しています。画像は未選別です。ライブデモは抜粋120枚のままです。[生成設定と検証記録](docs/updates/style93-generation.md) · [314スタイルの分類一覧](docs/style-categories.csv)。
 
 > [!NOTE]
 > **ライブデモは、カタログ全体の一部だけを抜粋したプレビューです。**
 >
 > **デモ掲載：120枚**（キャラクター96枚＋スタイル24枚）。閲覧・検索・プロンプトコピーを試せます。
 >
-> **全件版：34,158枚**（キャラクター33,937枚＋スタイル221枚）。全件版のローカルアプリと画像一式は、上のZIPリンクからダウンロードできます。
+> **全件版：34,251枚**（キャラクター33,937枚＋スタイル314枚）。全件版のローカルアプリと画像一式は、上のZIPリンクからダウンロードできます。
 
 [English](README.md)
 
@@ -28,13 +28,13 @@
 | 全件版ダウンロード | 枚数・容量 |
 |---|---:|
 | キャラクター | **33,937枚** |
-| スタイル | **221枚** |
-| **合計** | **34,158枚** |
-| 圧縮前のファイル合計 | **約2.75 GB／2.56 GiB** |
-| 配布ZIP・標準DEFLATE | **約2.05 GB／1.91 GiB** |
+| スタイル | **314枚** |
+| **合計** | **34,251枚** |
+| 圧縮前のファイル合計 | **約2.77 GB／2.58 GiB** |
+| 配布ZIP・標準DEFLATE | **約2.07 GB／1.92 GiB** |
 | オンラインデモ | **キャラクター96枚＋スタイル24枚**、約**8.36 MB** |
 
-**公開状況（2026-10-24）：** **[v0.1.2・全件版ZIPをダウンロード](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)**できます。ローカルアプリ、**キャラクター33,937枚＋スタイル221枚**、比較判定ツール、サンプルワークフローJSON 2件を同梱しています。オンラインデモは抜粋120枚です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書のため、全件版にはReleaseのZIPを使ってください。モデルや参照画像ライブラリーは別途用意してください。
+**公開状況（2026-10-27）：** **[v0.1.2・全件版ZIPをダウンロード](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip)**できます。ローカルアプリ、**キャラクター33,937枚＋スタイル314枚**、比較判定ツール、サンプルワークフローJSON 2件を同梱しています。オンラインデモは抜粋120枚です。GitHubの **Code → Download ZIP** で取得できるのはデモと説明書のため、全件版にはReleaseのZIPを使ってください。モデルや参照画像ライブラリーは別途用意してください。
 
 **画像の合格・不合格による選別はしていません。** キャラクターが違うもの、プロンプトと合わないもの、画風の効きが弱いものも含みます。収録や見た目の類似は、正確な再現や学習データへの収録を証明しません。デモの抜粋も「合格した画像の一覧」ではありません。
 
@@ -66,12 +66,12 @@
 | 私服差分の追加 | 2 |
 | 比較テスト | 5 |
 | **追加キャラクター小計** | **247** |
-| 画風・画家・表現媒体などのスタイル | **221** |
-| **追加分の合計** | **468** |
+| 画風・画家・表現媒体などのスタイル | **314** |
+| **追加分の合計** | **561** |
 
-衣装・形態差分・テストも1枚として数えています。ユニークな人物数ではありません。Krea2の画像や判定結果は取り込んでいません。スタイル221枚は先行40枚と追加181枚で、英文で画風の特徴を指定しています。画家名・媒体・アニメ表現などを試した結果であり、再現精度の保証ではありません。
+衣装・形態差分・テストも1枚として数えています。ユニークな人物数ではありません。Krea2の画像や判定結果は取り込んでいません。スタイル314枚は先行40枚・追加181枚・今回追加93枚で、英文で画風の特徴を指定しています。画家名・媒体・アニメ表現などを試した結果であり、再現精度の保証ではありません。
 
-全件版ZIPは標準圧縮（DEFLATE）で**約2.05 GB／1.91 GiB**です。正確なバイト数とSHA256は[リリースページ](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2)に掲載します。モデル・個人設定・ログ・ロック・参照画像ライブラリーは含みません。デモ内の絞り込み件数は抜粋分の件数で、全件版の作品別枚数とは異なります。
+全件版ZIPは標準圧縮（DEFLATE）で**約2.07 GB／1.92 GiB**です。正確なバイト数とSHA256は[リリースページ](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/releases/tag/v0.1.2)に掲載します。モデル・個人設定・ログ・ロック・参照画像ライブラリーは含みません。デモ内の絞り込み件数は抜粋分の件数で、全件版の作品別枚数とは異なります。
 
 ## ダウンロードとローカル版の使い方
 
@@ -171,7 +171,7 @@
 
 キャラクタープロンプトは元一覧の名前・作品・外見タグを英文へ組み込み、単体・中央・全身・余白・薄いグレー背景・柔らかい照明を共通に指定しています。人物には服を着た立ち姿を指定しました。元タグ、再利用用コピー文、実際の生成プロンプトは別に保持します。このキャラクターバッチにMOSSプロンプトエンハンサースキルは使っていません。
 
-スタイル**221枚すべて**の保存ワークフローを照合し、SFT BF16拡散モデル・INT8エンコーダー・Small Decoder・LoRAなし・25 steps・CFG 2.5を確認しています。画風の特徴を英文で指定し、次の共通シーンを加えました。
+スタイル**314枚すべて**の保存ワークフローを照合し、SFT BF16拡散モデル・INT8エンコーダー・Small Decoder・LoRAなし・25 steps・CFG 2.5を確認しています。画風の特徴を英文で指定し、次の共通シーンを加えました。
 
 ```text
 A single adult woman with short dark brown hair, wearing a cream shirt and a navy apron, carefully arranging a small bouquet of yellow and white flowers on a wooden worktable in a bright flower workshop. Three-quarter view from waist up, natural hand gesture, soft window light, simple uncluttered background. One person.

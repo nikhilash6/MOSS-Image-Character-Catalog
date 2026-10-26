@@ -1,8 +1,8 @@
-# Additional 93 styles — local completion / 追加93スタイルのローカル生成完了
+# Additional 93 styles — Release refresh / 追加93スタイルの配布ZIP更新
 
 Verified on 2026-10-27 (JST). All **93/93** normal-run images were registered in the local distribution copy. Together with the previous 221 styles, the local collection contains **33,937 characters + 314 styles = 34,251 images**. All 314 styles have one of the eight browsing categories.
 
-**Publication boundary:** This commit publishes documentation, category assignments and verification hashes. The 93 images and full local application are not added to main or the live demo. The current v0.1.2 Release ZIP remains **33,937 characters + 221 styles = 34,158 images**, approximately **2.05 GB / 1.91 GiB**. Its existing download and checksum are unchanged.
+**Release refresh — 2026-10-27:** The v0.1.2 ZIP now includes these 93 images, their prompts/workflows and the complete 314-style category mapping. The original 34,158 images are preserved. The current collection is **33,937 characters + 314 styles = 34,251 images**, approximately **2.07 GB / 1.92 GiB**. 7-Zip updates only selected files; the previous ZIP/checksum remain available under before-style93 names. Main contains documentation, category assignments and verification hashes; full images and the application remain Release downloads. The live demo stays at 120 samples.
 
 ## Rendering settings
 
@@ -28,7 +28,7 @@ See the [verification record](../validation/style93-generation.json) and [comple
 
 2026年10月27日（日本時間）に、通常版**93/93枚**の登録と画像整合を確認しました。ローカル配布用コピーは、**キャラクター33,937枚＋スタイル314枚＝合計34,251枚**です。既存221件の分類を保持し、新規93件も各1カテゴリに分類しました。Picture stylesへの一括分類はしていません。
 
-今回mainに追加するのは文書・分類対応表・照合記録です。新規93枚の画像と全件版アプリは公開していません。**公開中のv0.1.2 ZIPはスタイル221枚、合計34,158枚、約2.05 GB／1.91 GiBのまま**です。ライブデモも120枚（キャラクター96枚＋スタイル24枚）のままです。
+2026年10月27日のv0.1.2 ZIP更新で、新規93枚とプロンプト・ワークフロー・314件の分類表を追加しました。既存34,158枚の画像は保持しています。**更新後はスタイル314枚、合計34,251枚、約2.07 GB／1.92 GiB**です。7-Zipで必要なファイルだけ更新し、旧ZIPとチェックサムはbefore-style93名で保持しています。mainには文書・分類対応表・照合記録を置き、全件版アプリと画像はReleaseで配布します。ライブデモは120枚（キャラクター96枚＋スタイル24枚）のままです。
 
 生成設定は上表のとおり、SFT BF16・INT8 ConvRotエンコーダー・Small Decoder、**LoRAなし、25steps、CFG2.5、er_sde/simple、seed8961184、896×1184、WebP品質70**です。英文で画風の特徴を指定し、共通の成人女性の花の作業場を描いています。生成前に名称・意味の近い候補を整理していますが、生成画像の合格・不合格による選別はしていません。
 
