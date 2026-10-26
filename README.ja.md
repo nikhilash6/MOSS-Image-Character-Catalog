@@ -8,7 +8,9 @@
 
 **v0.1.2配布ZIP更新（2026-10-24）：** カタログの太字タイトルから、このリポジトリを新しいタブで開けるようになりました。ZIP内の日本語・英語READMEも更新しています。34,158枚の画像と生成設定は同じです。ダウンロードファイル名は従来どおりで、照合にはReleaseの更新済み `SHA256SUMS.txt` を使ってください。[更新内容](docs/updates/catalog-title-link.md)。
 
-**追加機能（2026-10-25）：スタイルの8カテゴリ絞り込み。** 221件を重複なく分類しました。**スタイル → 左側の「Category／分類」**で選択でき、複数選択・検索併用・日英切替に対応します。[Issue #2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/issues/2)で提案いただいたBrie-Wensleydaleさんに感謝します。更新済みv0.1.2 ZIPに同梱し、Releaseのチェックサムも更新しています。[分類と件数](docs/STYLE_CATEGORIES.ja.md) · [全221件CSV](docs/style-categories.csv)。
+**追加機能（2026-10-25）：スタイルの8カテゴリ絞り込み。** 221件を重複なく分類しました。**スタイル → 左側の「Category／分類」**で選択でき、複数選択・検索併用・日英切替に対応します。[Issue #2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/issues/2)で提案いただいたBrie-Wensleydaleさんに感謝します。更新済みv0.1.2 ZIPに同梱し、Releaseのチェックサムも更新しています。[分類と件数](docs/STYLE_CATEGORIES.ja.md) · [全314件CSV](docs/style-categories.csv)。
+
+**ローカル生成の更新（2026-10-27）：** 追加**93スタイル**の生成・登録・画像照合が完了しました。ローカル配布用コピーは**キャラクター33,937枚＋スタイル314枚＝合計34,251枚**で、8カテゴリに重複なく分類しています。**この追加分は、公開中のv0.1.2 ZIPと120枚のライブデモにはまだ含まれません。** 以下の配布枚数・容量は公開中ZIPの値です。[生成設定と検証記録](docs/updates/style93-generation.md) · [314スタイルの分類一覧](docs/style-categories.csv)。
 
 > [!NOTE]
 > **ライブデモは、カタログ全体の一部だけを抜粋したプレビューです。**

@@ -10,7 +10,9 @@
 
 **v0.1.2 package refresh — 2026-10-24:** The catalog title now opens this repository in a new tab. The ZIP also includes updated English and Japanese READMEs. The 34,158 images and rendering settings are unchanged. The download filename stays the same; use the updated `SHA256SUMS.txt` on the Release page to verify this refreshed package. [Update details](docs/updates/catalog-title-link.md).
 
-**New — 2026-10-25: eight style categories.** All 221 styles are assigned once. Open **Styles → Category** in the left filter panel; combine categories with search and switch English/Japanese. Thanks to Brie-Wensleydale for [Issue #2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/issues/2). The refreshed v0.1.2 ZIP includes the feature; verify it with the current Release checksum. [Categories and counts](docs/STYLE_CATEGORIES.md) · [221-entry CSV](docs/style-categories.csv).
+**New — 2026-10-25: eight style categories.** All 221 styles are assigned once. Open **Styles → Category** in the left filter panel; combine categories with search and switch English/Japanese. Thanks to Brie-Wensleydale for [Issue #2](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/issues/2). The refreshed v0.1.2 ZIP includes the feature; verify it with the current Release checksum. [Categories and counts](docs/STYLE_CATEGORIES.md) · [314-entry CSV: released 221 + local 93](docs/style-categories.csv).
+
+**Local generation update (2026-10-27):** An additional **93 styles** are complete and verified locally: **33,937 characters + 314 styles = 34,251 images**, classified without duplicate assignments into eight categories. These additions are **not yet included in the downloadable v0.1.2 ZIP or the 120-image live demo**. The download counts and size below still describe the published ZIP. [Rendering settings and verification](docs/updates/style93-generation.md) · [314-style category list](docs/style-categories.csv).
 
 > [!NOTE]
 > **The live demo is a preview showing only a small part of the collection.**

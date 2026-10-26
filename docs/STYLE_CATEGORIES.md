@@ -1,5 +1,25 @@
 # Eight style categories — Issue #2
 
+## Local extension — 2026-10-27
+
+The assignment lists now cover **314 local styles**, including the newly completed 93. Each style has exactly one category. The original 221 assignments are unchanged. The current Release ZIP still contains 221 styles and the live demo still contains 24 style samples; this metadata update does not add images to either.
+
+| Category | Current local styles |
+|---|---:|
+| Anime & Manga | 32 |
+| Western Animation & Comics | 44 |
+| Drawing & Print Media | 24 |
+| 3D / Digital / Photography | 17 |
+| Craft / Sculpture / Folk | 21 |
+| World Traditional Art | 31 |
+| Contemporary / Pop / Street / Surreal | 79 |
+| Classical & Modern Painting | 66 |
+| **Total / 合計** | **314** |
+
+[93-style generation and verification / 93件の生成設定・照合記録](updates/style93-generation.md)
+
+## 2026-10-25 — released 221-style classification / 公開済み221件の分類
+
 Thanks to Brie-Wensleydale for the [category proposal](https://github.com/ukr8b3g-cmyk/MOSS-Image-Character-Catalog/issues/2).
 
 All **221 styles** have exactly one category, with no omissions or duplicates. The proposal was adapted to the actual entries; these are browsing groups, not claims about MOSS training data or proof of accurate style reproduction.

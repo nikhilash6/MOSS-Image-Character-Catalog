@@ -57,9 +57,21 @@ def validate():
     assert "if(demoMode)throw new Error(t('demoReadOnly'))" in js
     assert 'html[data-catalog-mode="demo"] .actions' in css
     category_index = json.loads((ROOT/'docs/style-categories.json').read_text(encoding='utf-8'))
-    assert len(category_index['categories']) == 8 and len(category_index['assignments']) == 221
+    assert len(category_index['categories']) == 8 and len(category_index['assignments']) == 314
     import csv
-    category_names={r['name']:r['category_id'] for r in csv.DictReader((ROOT/'docs/style-categories.csv').open(encoding='utf-8',newline=''))}
+    with (ROOT/'docs/style-categories.csv').open(encoding='utf-8-sig',newline='') as stream:
+        category_rows = list(csv.DictReader(stream))
+    assert len(category_rows) == 314
+    assert len({r['catalog_key'] for r in category_rows}) == 314
+    assert {r['catalog_key']:r['category_id'] for r in category_rows} == category_index['assignments']
+    assert set(category_index['assignments'].values()) == {c['id'] for c in category_index['categories']}
+    category_names={r['name']:r['category_id'] for r in category_rows}
+    verification=json.loads((ROOT/'docs/validation/style93-generation.json').read_text(encoding='utf-8'))
+    assert verification['status']=='completed' and verification['verified_images']==93
+    assert len(verification['items'])==93 and len({i['key'] for i in verification['items']})==93
+    for item in verification['items']:
+        assert item['key'] in category_index['assignments']
+        assert re.fullmatch(r'[0-9a-f]{64}',item['sha256'])
     demo_category_index={**category_index,'assignments':{r['key']:category_names[r['name']] for r in rows if r['kind']=='style'}}
     for attrs, candidates in re.findall(r'<script type="application/json"([^>]*)>(.*?)</script>',html,re.S):
         if 'id="style-category-index"' in attrs:
@@ -70,7 +82,7 @@ def validate():
     assert total < 20_000_000, 'Unexpected demo growth; review publication scope'
     for name in ['README.md','README.ja.md']:
         text = (ROOT/name).read_text(encoding='utf-8')
-        for required in ['33,937','221','34,158','247','468','2.05 GB','1.91 GiB',
+        for required in ['33,937','221','34,158','314','34,251','docs/updates/style93-generation.md','247','468','2.05 GB','1.91 GiB',
                          '/releases/download/v0.1.2/MOSS-Image-Character-Catalog-v0.1.2.zip',
                          'MOSS_Image_Character_Sample.json','MOSS_Image_Style_Sample.json',
                          '8961184','1.0','25','2.5']:

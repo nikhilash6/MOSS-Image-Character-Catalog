@@ -4,7 +4,7 @@ import json
 ROOT=Path(__file__).resolve().parents[1]
 def configuration():
     config=json.loads((ROOT/'docs/style-categories.json').read_text(encoding='utf-8'))
-    assert len(config['categories'])==8 and len(config['assignments'])==221
+    assert len(config['categories'])==8 and len(config['assignments'])==314
     assert set(config['assignments'].values())=={c['id'] for c in config['categories']}
     return config
 def patch_html(raw, config=None):
